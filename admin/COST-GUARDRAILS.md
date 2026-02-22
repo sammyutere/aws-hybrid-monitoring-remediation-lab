@@ -3,17 +3,17 @@
 ## Instance Types
 - t3.micro or t4g.micro only.
 
-## Regions
-- us-east-1 (lowest cost baseline).
+## Region
+- Use one region consistently to avoid surprise spend.
 
 ## Shutdown Policy
 - Stop EC2 instances when not actively testing.
-- No NAT Gateway unless required.
+- Destroy unused infrastructure with terraform destroy.
 
 ## Budget Alert
 - Monthly budget: $20.
-- SNS alert configured on Day 2.
+- Budget + alert configured on Day 2.
 
-## Monitoring Discipline
-- Use free tier where possible.
-- Destroy unused infrastructure with terraform destroy.
+## Avoid Cost Traps
+- Avoid NAT Gateway unless required.
+- Avoid leaving load balancers running.
