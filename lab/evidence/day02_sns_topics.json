@@ -1,0 +1,7 @@
+{
+    "Topics": [
+        {
+            "TopicArn": "arn:aws:sns:us-east-1:393864004024:aws-budget-alerts"
+        }
+    ]
+}
