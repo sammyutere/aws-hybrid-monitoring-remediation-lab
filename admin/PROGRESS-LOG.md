@@ -63,3 +63,24 @@ Rationale:
   - aws configure
   - terraform init
   - terraform validate
+
+## Day 03 — VPC + EC2 + node_exporter
+
+### Objectives
+- Deploy VPC and subnet.
+- Launch EC2 instance.
+- Install node_exporter automatically.
+- Restrict port 9100 to my IP.
+
+### Evidence
+- lab/evidence/day03_instance_state.txt
+- lab/evidence/day03_node_exporter_head.txt
+
+### Validation
+- curl http://<EC2_PUBLIC_IP>:9100/metrics returns metrics.
+
+### Checkpoint
+- Tag: day03-vpc-ec2-node-exporter
+- Restore Method:
+  - ./tf.sh apply with correct vars
+  - Verify exporter reachable

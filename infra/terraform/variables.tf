@@ -1,9 +1,11 @@
 variable "region" {
-  type    = string
   default = "us-east-1"
 }
 
 variable "ami_id" {
-  type        = string
-  description = "AMI ID for Ubuntu or Amazon Linux"
+  description = "ami-0199fa5fada510433"
+}
+
+variable "my_ip" {
+  description = "2.217.62.146/32"
 }
