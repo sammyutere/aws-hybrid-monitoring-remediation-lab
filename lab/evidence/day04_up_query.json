@@ -1,0 +1,1 @@
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"up","instance":"54.224.138.94:9100","job":"aws-node"},"value":[1772073855.160,"1"]}]}}

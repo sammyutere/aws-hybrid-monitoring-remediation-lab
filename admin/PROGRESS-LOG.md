@@ -84,3 +84,32 @@ Rationale:
 - Restore Method:
   - ./tf.sh apply with correct vars
   - Verify exporter reachable
+
+## Day 04 — Local Prometheus Scraping AWS
+
+### Objectives
+- Run Prometheus locally via Docker.
+- Scrape EC2 node_exporter.
+- Run Alertmanager locally.
+- Validate metrics ingestion.
+
+### Validation
+- Prometheus UI reachable.
+- Target status shows UP.
+- Query `up` returns 1.
+- Alertmanager ready endpoint returns success.
+
+### Evidence
+- lab/evidence/day04_prometheus_ready.txt
+- lab/evidence/day04_prometheus_targets.json
+- lab/evidence/day04_node_exporter_head.txt
+- lab/evidence/day04_up_query.json
+- lab/evidence/day04_alertmanager_ready.txt
+
+### Checkpoint
+- Tag: day04-local-monitoring-baseline
+- Restore Method:
+  - Ensure EC2 running.
+  - Start Prometheus Docker container.
+  - Start Alertmanager Docker container.
+  - Verify target status UP.
