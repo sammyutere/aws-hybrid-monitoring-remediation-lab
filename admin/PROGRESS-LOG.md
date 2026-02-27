@@ -113,3 +113,58 @@ Rationale:
   - Start Prometheus Docker container.
   - Start Alertmanager Docker container.
   - Verify target status UP.
+
+## Day 05 — First Alert Rule + Failure Drill (NodeExporterDown)
+
+### Objectives
+- Add NodeExporterDown alert rule.
+- Validate rule loading in Prometheus.
+- Validate alert delivery to Alertmanager.
+- Run a controlled failure drill.
+
+### What I changed
+- Added Prometheus rule group `node-basic` with alert `NodeExporterDown`.
+- Configured Prometheus to send alerts to local Alertmanager via host.docker.internal.
+
+### Architectural Improvement — Elastic IP
+
+Problem:
+- EC2 public IP changed after Terraform apply.
+- Prometheus target no longer resolved.
+
+Root Cause:
+- Instance used ephemeral public IP.
+- Infrastructure was not stable for monitoring endpoint.
+
+Solution:
+- Allocated Elastic IP via Terraform.
+- Associated EIP with monitoring node.
+- Updated Prometheus scrape target to use Elastic IP.
+- Verified metrics reachable and target status UP.
+
+Operational Benefit:
+- Monitoring endpoint now stable across instance restart/redeploy.
+- Aligns with production best practices.
+
+### Failure Drill Method
+- Simulated exporter reachability failure by temporarily changing Security Group ingress to a wrong my_ip/32.
+- Restored my_ip/32 afterward to resolve alert.
+
+### Evidence
+- lab/evidence/day05_prometheus_ready.txt
+- lab/evidence/day05_eip_output.txt
+- lab/evidence/day05_rules.json
+- lab/evidence/day05_alertmanager_ready.txt
+- lab/evidence/day05_my_ipv4.txt
+- lab/evidence/day05_prometheus_alerts_during_outage.json
+- lab/evidence/day05_alertmanager_alerts_during_outage.json
+- lab/evidence/day05_prometheus_alerts_after_restore.json
+- lab/evidence/day05_prometheus_targets_after_restore.json
+
+### Checkpoint
+- Tag: day05-alerting-baseline
+- Restore Method:
+  - Start local Prometheus + Alertmanager containers
+  - Ensure SG my_ip/32 matches current IPv4
+  - Verify Prometheus target UP and no page alerts firing
+

@@ -1,0 +1,11 @@
+groups:
+  - name: node-basic
+    rules:
+      - alert: NodeExporterDown
+        expr: up{job="aws-node"} == 0
+        for: 2m
+        labels:
+          severity: page
+        annotations:
+          summary: "Node exporter down on {{ $labels.instance }}"
+          description: "Prometheus cannot scrape node_exporter for 2m. Check reachability, SG my_ip/32, exporter process, and instance health."
