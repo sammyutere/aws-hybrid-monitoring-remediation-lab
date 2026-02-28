@@ -1,0 +1,18 @@
+[0m[1maws_vpc.lab_vpc: Refreshing state... [id=vpc-072b2c1984f7b2400][0m
+[0m[1maws_eip.node_eip: Refreshing state... [id=eipalloc-098efa269cc56fc4e][0m
+[0m[1maws_internet_gateway.igw: Refreshing state... [id=igw-03ff0c61b4d91fcfa][0m
+[0m[1maws_subnet.public_subnet: Refreshing state... [id=subnet-0f5efaa567d27825a][0m
+[0m[1maws_security_group.node_sg: Refreshing state... [id=sg-013e820b52efe21b1][0m
+[0m[1maws_route_table.public_rt: Refreshing state... [id=rtb-0a44c50c4d1f6ff30][0m
+[0m[1maws_route_table_association.public_assoc: Refreshing state... [id=rtbassoc-09fdb89756fa3dfca][0m
+[0m[1maws_instance.node: Refreshing state... [id=i-036af2e244fc9b8dc][0m
+[0m[1maws_eip_association.node_eip_assoc: Refreshing state... [id=eipassoc-0c131be390a5ccf0e][0m
+
+Changes to Outputs:
+  [32m+[0m[0m instance_id = "i-036af2e244fc9b8dc"
+
+You can apply this plan to save these new output values to the Terraform state, without changing any real infrastructure.
+
+
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.

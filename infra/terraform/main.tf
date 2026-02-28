@@ -68,6 +68,10 @@ resource "aws_security_group" "node_sg" {
   name   = "node-exporter-sg"
   vpc_id = aws_vpc.lab_vpc.id
 
+  lifecycle {
+    create_before_destroy = true
+  }
+
   ingress {
     description = "Allow node_exporter from my IPv4"
     from_port   = 9100

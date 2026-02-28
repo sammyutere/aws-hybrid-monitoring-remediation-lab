@@ -168,3 +168,41 @@ Operational Benefit:
   - Ensure SG my_ip/32 matches current IPv4
   - Verify Prometheus target UP and no page alerts firing
 
+
+## Day 06 — Reproducibility Hardening (EIP + SG lifecycle + Docker Compose)
+
+### Objectives
+- Stabilize EC2 monitoring endpoint using Elastic IP (avoid ephemeral public IP drift).
+- Prevent Terraform Security Group deletion failures (DependencyViolation).
+- Standardize Terraform variable inputs via terraform.tfvars.
+- Standardize local monitoring lifecycle via docker compose.
+
+### What I changed
+- Terraform:
+  - Added/verified Elastic IP + output (stable scrape endpoint).
+  - Added `lifecycle { create_before_destroy = true }` to security group to prevent SG deletion while attached.
+  - Used `trimspace(var.my_ip)` for CIDR input robustness.
+  - Standardized runs with `-var-file=terraform.tfvars`.
+- Monitoring:
+  - Created `monitoring/docker-compose.yml` to run Prometheus + Alertmanager locally.
+  - Updated Prometheus scrape target to use the Elastic IP.
+
+### Evidence
+- lab/evidence/day06_tf_plan.txt
+- lab/evidence/day06_elastic_ip.txt
+- lab/evidence/day06_node_exporter_head_via_eip.txt
+- lab/evidence/day06_prometheus_ready.txt
+- lab/evidence/day06_alertmanager_ready.txt
+- lab/evidence/day06_targets.json
+- lab/evidence/day06_rules.json
+
+### Checkpoint (Snapshot Equivalent)
+- Tag: day06-reproducibility-baseline
+- Restore Method:
+  - Terraform: `cd infra/terraform && ./tf.sh apply -var-file=terraform.tfvars`
+  - Monitoring: `cd monitoring && docker compose up -d`
+  - Validate:
+    - Prometheus ready: http://localhost:9090/-/ready
+    - Alertmanager ready: http://localhost:9093/-/ready
+    - Target health is UP: http://localhost:9090/targets
+
