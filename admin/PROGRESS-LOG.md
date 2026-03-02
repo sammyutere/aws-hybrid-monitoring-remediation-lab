@@ -206,3 +206,34 @@ Operational Benefit:
     - Alertmanager ready: http://localhost:9093/-/ready
     - Target health is UP: http://localhost:9090/targets
 
+## Day 07 — Alert Routing & Severity Discipline
+
+### Objectives
+- Separate page vs ticket alerts.
+- Implement grouping and repeat controls.
+- Validate routing logic via failure drill.
+
+### What I Implemented
+- Alertmanager routing based on severity.
+- group_by: alertname + instance.
+- group_wait: 30s to reduce noise.
+- repeat_interval: 4h to prevent alert storms.
+- Introduced HighMemoryUsage (ticket-level alert).
+
+### Drill Method
+- Temporarily restricted SG ingress to simulate NodeExporterDown.
+- Verified page alert routed to page-receiver.
+- Restored SG rule and confirmed resolution.
+
+### Evidence
+- day07_alertmanager_ready.txt
+- day07_rules_loaded.json
+- day07_prometheus_alerts_page.json
+- day07_alertmanager_alerts_page.json
+- day07_targets_after_restore.json
+- day07_prometheus_alerts_ticket.json
+
+### Operational Insight
+- Clear separation of page vs ticket reduces cognitive load.
+- Grouping prevents duplicate alert storms.
+- Severity taxonomy enforces response discipline.

@@ -2,7 +2,24 @@ global:
   resolve_timeout: 5m
 
 route:
-  receiver: default
+  receiver: default-receiver
+  group_by: ["alertname", "instance"]
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+
+  routes:
+    - matchers:
+        - severity="page"
+      receiver: page-receiver
+
+    - matchers:
+        - severity="ticket"
+      receiver: ticket-receiver
 
 receivers:
-  - name: default
+  - name: default-receiver
+
+  - name: page-receiver
+
+  - name: ticket-receiver

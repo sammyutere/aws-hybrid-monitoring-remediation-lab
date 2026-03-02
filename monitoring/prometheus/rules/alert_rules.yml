@@ -9,3 +9,14 @@ groups:
         annotations:
           summary: "Node exporter down on {{ $labels.instance }}"
           description: "Prometheus cannot scrape node_exporter for 2m. Check reachability, SG my_ip/32, exporter process, and instance health."
+
+  - name: node-warning
+    rules:
+      - alert: HighMemoryUsage
+        expr: (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) < 0.20
+        for: 2m
+        labels:
+          severity: ticket
+        annotations:
+          summary: "Memory usage high on {{ $labels.instance }}"
+          description: "Available memory below 20% for 2 minutes."
