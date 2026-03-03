@@ -284,3 +284,46 @@ Together:
 ### Operational Maturity
 - Monitoring not dependent on a single telemetry plane.
 - Cloud-native + self-hosted metrics co-exist.
+
+## Day 09 — Controlled CPU Load Injection & Signal Validation
+
+### Objectives
+- Enable SSM access for remote execution.
+- Inject controlled CPU stress.
+- Validate Prometheus + CloudWatch telemetry response.
+- Compare reaction time and resolution.
+
+### What I Implemented
+- Attached IAM role with AmazonSSMManagedInstanceCore.
+- Registered instance with Systems Manager.
+- Injected CPU load via SSM (stress --cpu 2 --timeout 120).
+
+### Observability Findings
+Prometheus:
+- 15s scrape resolution.
+- Faster reaction to CPU spike.
+- Near real-time alert evaluation.
+
+CloudWatch:
+- 60s resolution.
+- Slight delay in reflecting spike.
+- Hypervisor-level perspective.
+
+### Insight
+Prometheus = fast, granular, OS-level visibility.
+CloudWatch = infrastructure-native validation layer.
+
+Hybrid model reduces blind spots.
+
+### Evidence
+- day09_ssm_registration.json
+- day09_ssm_command.json
+- day09_prometheus_cpu_during_load.json
+- day09_cloudwatch_cpu_during_load.json
+- day09_prometheus_alerts_during_load.json
+- day09_cloudwatch_alarm_state.json
+
+### Operational Maturity
+- Monitoring validated under real load.
+- Failure injection used to test observability.
+- Remote command access hardened via SSM (no SSH keys).
