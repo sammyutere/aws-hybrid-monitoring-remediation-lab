@@ -1,0 +1,31 @@
+{
+    "MetricAlarms": [
+        {
+            "AlarmName": "EC2HighCPU",
+            "AlarmArn": "arn:aws:cloudwatch:us-east-1:393864004024:alarm:EC2HighCPU",
+            "AlarmConfigurationUpdatedTimestamp": "2026-03-03T09:33:31.788000+00:00",
+            "ActionsEnabled": true,
+            "OKActions": [],
+            "AlarmActions": [],
+            "InsufficientDataActions": [],
+            "StateValue": "INSUFFICIENT_DATA",
+            "StateReason": "Unchecked: Initial alarm creation",
+            "StateUpdatedTimestamp": "2026-03-03T09:33:31.788000+00:00",
+            "MetricName": "CPUUtilization",
+            "Namespace": "AWS/EC2",
+            "Statistic": "Average",
+            "Dimensions": [
+                {
+                    "Name": "InstanceId",
+                    "Value": "i-036af2e244fc9b8dc"
+                }
+            ],
+            "Period": 60,
+            "EvaluationPeriods": 2,
+            "Threshold": 80.0,
+            "ComparisonOperator": "GreaterThanThreshold",
+            "StateTransitionedTimestamp": "2026-03-03T09:33:31.788000+00:00"
+        }
+    ],
+    "CompositeAlarms": []
+}

@@ -237,3 +237,50 @@ Operational Benefit:
 - Clear separation of page vs ticket reduces cognitive load.
 - Grouping prevents duplicate alert storms.
 - Severity taxonomy enforces response discipline.
+
+## Day 08 — Hybrid Observability (CloudWatch + Prometheus)
+
+### Objective
+Layer infrastructure metrics (CloudWatch) with application/system metrics (Prometheus).
+
+### What I Validated
+- EC2 detailed monitoring enabled (1-minute granularity).
+- Retrieved CPUUtilization via AWS CLI.
+- Queried CPU utilization via Prometheus.
+- Compared both telemetry sources.
+
+### Observability Model
+
+Layer 1 — Infrastructure (CloudWatch)
+- Source: AWS hypervisor metrics
+- Resolution: 1 minute
+- Metric: CPUUtilization
+- Scope: EC2-level visibility
+
+Layer 2 — Node (Prometheus + node_exporter)
+- Source: OS-level metrics
+- Resolution: 15 seconds
+- Metric: node_cpu_seconds_total
+- Scope: Process & OS insight
+
+### Architectural Insight
+CloudWatch answers:
+- Is the VM overloaded?
+
+Prometheus answers:
+- Which CPU state is responsible?
+- Is it system, user, iowait?
+
+Together:
+- Reduced blind spots
+- Faster root cause isolation
+
+### Evidence
+- day08_instance_state.txt
+- day08_instance_id.txt
+- day08_cloudwatch_cpu.json
+- day08_prometheus_cpu_query.json
+
+### Operational Maturity
+- Monitoring not dependent on a single telemetry plane.
+- Cloud-native + self-hosted metrics co-exist.
