@@ -1,0 +1,136 @@
+{
+    "Commands": [
+        {
+            "CommandId": "b7797d77-5b1d-4b82-9a92-a0bc422dbe15",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "Comment": "",
+            "ExpiresAfter": "2026-03-05T00:58:49.322000+00:00",
+            "Parameters": {
+                "commands": [
+                    "sudo systemctl stop node_exporter"
+                ]
+            },
+            "InstanceIds": [
+                "i-036af2e244fc9b8dc"
+            ],
+            "Targets": [],
+            "RequestedDateTime": "2026-03-04T22:58:49.322000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "OutputS3Region": "us-east-1",
+            "OutputS3BucketName": "",
+            "OutputS3KeyPrefix": "",
+            "MaxConcurrency": "50",
+            "MaxErrors": "0",
+            "TargetCount": 1,
+            "CompletedCount": 1,
+            "ErrorCount": 0,
+            "DeliveryTimedOutCount": 0,
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            },
+            "TimeoutSeconds": 3600,
+            "AlarmConfiguration": {
+                "IgnorePollAlarmFailure": false,
+                "Alarms": []
+            },
+            "TriggeredAlarms": []
+        },
+        {
+            "CommandId": "b7e821fc-c140-42b6-8da5-4896ff550078",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "Comment": "",
+            "ExpiresAfter": "2026-03-05T00:58:08.266000+00:00",
+            "Parameters": {
+                "commands": [
+                    "sudo systemctl restart node_exporter"
+                ]
+            },
+            "InstanceIds": [
+                "i-036af2e244fc9b8dc"
+            ],
+            "Targets": [],
+            "RequestedDateTime": "2026-03-04T22:58:08.266000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "OutputS3Region": "us-east-1",
+            "OutputS3BucketName": "",
+            "OutputS3KeyPrefix": "",
+            "MaxConcurrency": "50",
+            "MaxErrors": "0",
+            "TargetCount": 1,
+            "CompletedCount": 1,
+            "ErrorCount": 0,
+            "DeliveryTimedOutCount": 0,
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            },
+            "TimeoutSeconds": 3600,
+            "AlarmConfiguration": {
+                "IgnorePollAlarmFailure": false,
+                "Alarms": []
+            },
+            "TriggeredAlarms": []
+        },
+        {
+            "CommandId": "7bd88e57-1ea7-44d3-8d56-c68bc4b10b07",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "Comment": "",
+            "ExpiresAfter": "2026-03-03T20:22:28.630000+00:00",
+            "Parameters": {
+                "commands": [
+                    "sudo yum install -y stress && stress --cpu 2 --timeout 120"
+                ]
+            },
+            "InstanceIds": [
+                "i-036af2e244fc9b8dc"
+            ],
+            "Targets": [],
+            "RequestedDateTime": "2026-03-03T18:22:28.630000+00:00",
+            "Status": "Failed",
+            "StatusDetails": "Failed",
+            "OutputS3Region": "us-east-1",
+            "OutputS3BucketName": "",
+            "OutputS3KeyPrefix": "",
+            "MaxConcurrency": "50",
+            "MaxErrors": "0",
+            "TargetCount": 1,
+            "CompletedCount": 1,
+            "ErrorCount": 1,
+            "DeliveryTimedOutCount": 0,
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            },
+            "TimeoutSeconds": 3600,
+            "AlarmConfiguration": {
+                "IgnorePollAlarmFailure": false,
+                "Alarms": []
+            },
+            "TriggeredAlarms": []
+        }
+    ]
+}

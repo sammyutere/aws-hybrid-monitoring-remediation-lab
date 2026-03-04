@@ -20,6 +20,8 @@ route:
 receivers:
   - name: default-receiver
 
-  - name: page-receiver
-
   - name: ticket-receiver
+
+  - name: page-receiver
+    webhook_configs:
+      - url: "http://host.docker.internal:5001"

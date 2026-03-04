@@ -327,3 +327,35 @@ Hybrid model reduces blind spots.
 - Monitoring validated under real load.
 - Failure injection used to test observability.
 - Remote command access hardened via SSM (no SSH keys).
+
+## Day 10 — Automated Remediation via Alertmanager Webhook
+
+### Objective
+
+Introduce closed-loop remediation:
+Alert → Automation → Recovery.
+
+### Implementation
+
+Alertmanager webhook triggers automation script.
+
+Automation script sends SSM command to restart node_exporter.
+
+### Result
+
+node_exporter automatically restarted after failure.
+
+Prometheus scrape recovered.
+
+### Evidence
+
+day10_prometheus_alerts.json  
+day10_alertmanager_alerts.json  
+day10_remediation_log.txt  
+day10_ssm_command_history.json
+
+### Operational Insight
+
+Automated remediation reduces mean time to recovery.
+
+Manual intervention becomes fallback, not first response.
