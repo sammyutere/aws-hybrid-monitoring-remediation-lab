@@ -359,3 +359,36 @@ day10_ssm_command_history.json
 Automated remediation reduces mean time to recovery.
 
 Manual intervention becomes fallback, not first response.
+
+## Day 11 — Incident Runbooks & Operational Playbooks
+
+### Objectives
+
+Formalize operational procedures for monitoring alerts.
+
+### What I Implemented
+
+Created structured runbooks for:
+
+- NodeExporterDown
+- High CPU Utilization
+
+Runbooks document:
+
+- alert definition
+- detection
+- investigation
+- remediation
+- validation
+
+### Evidence
+
+day11_ssm_validation.json  
+day11_prometheus_alerts.json  
+day11_alertmanager_alerts.json
+
+### Operational Insight
+
+Monitoring systems must include documented response procedures.
+
+Runbooks reduce incident response time and improve operational consistency.
