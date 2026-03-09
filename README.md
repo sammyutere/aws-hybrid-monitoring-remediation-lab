@@ -88,6 +88,16 @@ Each runbook documents:
 
 ---
 
+## Incident Postmortems
+
+Operational incidents are documented to capture lessons learned and improve system reliability.
+
+Postmortems included:
+
+docs/postmortems/2026-node-exporter-outage.md
+
+---
+
 ## Monitoring Stack
 
 Prometheus runs locally and scrapes the EC2 node exporter.

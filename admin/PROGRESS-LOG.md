@@ -392,3 +392,29 @@ day11_alertmanager_alerts.json
 Monitoring systems must include documented response procedures.
 
 Runbooks reduce incident response time and improve operational consistency.
+
+## Day 12 — Incident Postmortem Documentation
+
+### Objective
+
+Simulate monitoring incident and document structured incident analysis.
+
+### What I Implemented
+
+Simulated node_exporter outage.
+
+Prometheus detected failure and fired alert.
+
+Alertmanager triggered automated remediation via webhook and AWS SSM.
+
+Created incident postmortem documenting timeline, impact, root cause, and lessons learned.
+
+### Evidence
+
+day12_prometheus_alerts.json  
+day12_alertmanager_alerts.json  
+day12_automation_log.txt
+
+### Operational Insight
+
+Operational maturity requires documenting incidents to improve reliability and response procedures.
