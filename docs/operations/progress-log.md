@@ -418,3 +418,54 @@ day12_automation_log.txt
 ### Operational Insight
 
 Operational maturity requires documenting incidents to improve reliability and response procedures.
+
+## Day 13 — Grafana Observability Dashboards
+
+### Objective
+
+Introduce visualization layer for monitoring stack.
+
+### Implementation
+
+Deployed Grafana via Docker Compose.
+
+Connected Grafana to Prometheus data source.
+
+Imported Node Exporter dashboard.
+
+### Result
+
+System metrics are visualized through dashboards.
+
+Monitoring now includes:
+
+- metrics collection
+- alerting
+- automation
+- visualization
+
+### Evidence
+
+day13_grafana_dashboards.json  
+day13_grafana_datasources.json  
+day13_dashboard_screenshot.png  
+day13_prometheus_query.json
+
+### Troubleshooting — Exporter metrics timeout during Grafana validation
+
+Symptom:
+- `curl: (7) Failed to connect to <EIP> port 9100: Operation timed out`
+
+Interpretation:
+- The EC2 monitoring endpoint was not reachable from the local Mac.
+- This indicated a network access issue rather than a Grafana problem.
+
+Most likely cause:
+- Security Group ingress did not match the current public IPv4 `/32`.
+
+Fix:
+- Retrieved current IPv4 with:
+  `curl -4 https://api.ipify.org`
+- Updated `my_ip` in `terraform.tfvars`
+- Re-applied Terraform
+- Re-tested exporter reachability before continuing Grafana validation

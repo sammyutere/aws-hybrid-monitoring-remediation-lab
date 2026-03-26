@@ -295,3 +295,548 @@ Mon  9 Mar 2026 20:30:59 GMT ALERT RECEIVED - restarting node_exporter
     }
 }
 Mon  9 Mar 2026 20:31:11 GMT restart command sent via SSM
+-----
+Mon  9 Mar 2026 23:26:20 GMT ALERT RECEIVED - restarting node_exporter
+Mon  9 Mar 2026 23:44:49 GMT restart command sent via SSM
+-----
+Mon  9 Mar 2026 23:48:41 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "82cd6208-3e44-4b0a-be0b-7d6bb69ce228",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-10T01:48:43.262000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-09T23:48:43.262000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Mon  9 Mar 2026 23:48:43 GMT restart command sent via SSM
+-----
+Tue 10 Mar 2026 00:02:59 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "6fefa180-fbdf-4393-9b66-9ce2e2f4a537",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-10T02:03:00.956000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-10T00:03:00.956000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Tue 10 Mar 2026 00:03:01 GMT restart command sent via SSM
+-----
+Sun 15 Mar 2026 13:00:01 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "e32b3cad-d45e-4664-8353-4f12246b7821",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-15T15:00:06.730000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-15T13:00:06.730000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Sun 15 Mar 2026 13:00:06 GMT restart command sent via SSM
+-----
+Sun 15 Mar 2026 20:11:02 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "cb17bc06-9342-4ee9-b859-ab5fb591c440",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-15T22:11:09.036000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-15T20:11:09.036000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Sun 15 Mar 2026 20:11:09 GMT restart command sent via SSM
+-----
+Sun 15 Mar 2026 20:16:02 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "7ff50b77-8294-4ece-a227-9b8e3d009690",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-15T22:16:07.006000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-15T20:16:07.006000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Sun 15 Mar 2026 20:16:07 GMT restart command sent via SSM
+-----
+Sun 15 Mar 2026 20:40:42 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "4c63b7f6-5e6b-41b6-8a12-2977ed50444d",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-15T22:40:51.339000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-15T20:40:51.339000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Sun 15 Mar 2026 20:40:52 GMT restart command sent via SSM
+-----
+Sun 15 Mar 2026 20:50:36 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "af02e700-593e-48d1-baee-e84260d52ec0",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-15T22:50:38.616000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-15T20:50:38.616000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Sun 15 Mar 2026 20:50:38 GMT restart command sent via SSM
+-----
+Sun 15 Mar 2026 22:57:58 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "0eae541b-49f4-42c0-aefc-fc062a977e40",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-16T00:58:01.174000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-15T22:58:01.174000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Sun 15 Mar 2026 22:58:01 GMT restart command sent via SSM
+-----
+Sun 15 Mar 2026 23:00:33 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "79d5bb3c-8ac3-4c52-ae2b-3b86845a5667",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-16T01:00:39.200000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-15T23:00:39.200000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Sun 15 Mar 2026 23:00:39 GMT restart command sent via SSM
+-----
+Sun 15 Mar 2026 23:15:32 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "180e60ff-f731-4447-9007-dfe3d8e34991",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-16T01:15:35.844000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-15T23:15:35.844000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Sun 15 Mar 2026 23:15:36 GMT restart command sent via SSM
+-----
+Mon 16 Mar 2026 09:34:42 GMT ALERT RECEIVED - restarting node_exporter
+{
+    "Command": {
+        "CommandId": "79d00006-495a-4fe4-886f-00c973a97941",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-03-16T11:35:50.445000+00:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl restart node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-03-16T09:35:50.445000+00:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}
+Mon 16 Mar 2026 09:35:51 GMT restart command sent via SSM
+-----
+Mon 16 Mar 2026 11:43:30 GMT ALERT RECEIVED - restarting node_exporter
+Mon 16 Mar 2026 11:58:30 GMT restart command sent via SSM

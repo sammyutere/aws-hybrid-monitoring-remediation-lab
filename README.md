@@ -45,7 +45,75 @@ AWS Infrastructure
 └── Systems Manager (SSM)
       └── Remote remediation execution
 
+
+## Observability Architecture:
+
+EC2 Instance
+   │
+   └── node_exporter
+           │
+           ▼
+Prometheus
+   │
+   ├── Alert rules
+   └── Metrics storage
+           │
+           ▼
+Grafana
+   │
+   └── Visualization dashboards
+           │
+           ▼
+Alertmanager
+   │
+   └── Routing + remediation
+
 ---
+
+## Quick System Validation
+
+After deploying infrastructure and starting the monitoring stack, validate the system with the following checks.
+
+### 1. Confirm node exporter metrics
+
+curl http://<ELASTIC_IP>:9100/metrics | head
+
+Expected output:
+
+HELP go_goroutines Number of goroutines
+
+### 2. Confirm Prometheus target health
+
+Open:
+http://localhost:9090/targets
+
+Expected status:
+
+UP
+
+### 3. Confirm Alertmanager readiness
+
+curl http://localhost:9093/-/ready
+
+### 4. Confirm Grafana dashboards
+
+Open:
+
+http://localhost:3000
+
+Login:
+
+admin/admin
+
+Import dashboard **1860 (Node Exporter Full)**.
+
+---
+
+### If validation fails
+
+See troubleshooting section:
+
+docs/troubleshooting/
 
 ## System Components
 
@@ -263,7 +331,7 @@ These demonstrate:
 Development progress is documented in:
 
 ```bash
-admin/PROGRESS-LOG.md
+docs/operations/progress-log.md
 ```
 This file records:
 - lab milestones
@@ -294,8 +362,8 @@ Tags allow restoring the repository to any validated milestone.
 
 aws-hybrid-monitoring-remediation-lab
 │
-├── admin
-│   └── PROGRESS-LOG.md
+├── docs
+│   └── operations/progress-log.md
 │
 ├── automation
 │   ├── scripts
