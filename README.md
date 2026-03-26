@@ -109,11 +109,29 @@ Import dashboard **1860 (Node Exporter Full)**.
 
 ---
 
-### If validation fails
+## Troubleshooting
 
-See troubleshooting section:
+Common operational issues and fixes are documented here:
 
-docs/troubleshooting/
+- [Exporter Connectivity](docs/troubleshooting/exporter-connectivity.md)
+- [Prometheus Target DOWN](docs/troubleshooting/prometheus-target-down.md)
+- [Alertmanager Not Firing](docs/troubleshooting/alertmanager-not-firing.md)
+
+---
+
+## Common Commands
+
+Start monitoring stack:
+
+make up
+
+Stop monitoring stack:
+
+make down
+
+Check system status:
+
+make status
 
 ## System Components
 
@@ -181,6 +199,51 @@ Prometheus evaluates alert rules including:
 - HighMemoryUsage
 - CPU load conditions
 Metrics are collected every 15 seconds.
+
+---
+
+## Visualization
+
+Grafana provides dashboards for visualizing Prometheus metrics.
+
+Access Grafana:
+
+http://localhost:3000
+
+Default dashboard:
+
+Node Exporter Full (ID: 1860)
+
+Metrics visualized:
+
+- CPU usage
+- memory utilization
+- disk I/O
+- filesystem usage
+- network throughput
+
+### Validation
+
+To confirm visualization is working:
+
+1. Ensure Prometheus target is UP:
+
+http://localhost:9090/targets
+
+2. Ensure exporter endpoint is reachable:
+
+curl http://<ELASTIC_IP>:9100/metrics
+
+3. Open Grafana and select instance:
+
+<ELASTIC_IP>:9100
+
+### Troubleshooting
+
+If dashboards show no data, see:
+
+- [Exporter Connectivity](docs/troubleshooting/exporter-connectivity.md)
+- [Prometheus Target DOWN](docs/troubleshooting/prometheus-target-down.md)
 
 ---
 
