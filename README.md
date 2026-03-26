@@ -1,5 +1,19 @@
 # AWS Hybrid Monitoring & Automated Remediation Lab
 
+## What This Project Demonstrates
+
+- End-to-end observability (Prometheus + Grafana + CloudWatch)
+- Automated incident remediation via AWS SSM
+- Production-style runbooks, troubleshooting, and postmortems
+
+---
+
+## Dashboard Preview
+
+![Grafana Dashboard](lab/evidence/day13_dashboard_screenshot.png)
+
+---
+
 ## Overview
 
 This repository demonstrates a production-style hybrid monitoring architecture combining:
