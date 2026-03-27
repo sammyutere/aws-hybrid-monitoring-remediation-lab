@@ -1,0 +1,28 @@
+{
+    "Snapshots": [
+        {
+            "Description": "pre-day14-cloudwatch-agent-20260327-0915",
+            "Encrypted": false,
+            "OwnerId": "393864004024",
+            "Progress": "100%",
+            "SnapshotId": "snap-0d682cb8b4bf9c457",
+            "StartTime": "2026-03-27T19:14:53.933000+00:00",
+            "State": "completed",
+            "VolumeId": "vol-02ac31ae62c398f91",
+            "VolumeSize": 8,
+            "StorageTier": "standard"
+        },
+        {
+            "Description": "pre-day14-cloudwatch-agent-20260327-2227",
+            "Encrypted": false,
+            "OwnerId": "393864004024",
+            "Progress": "100%",
+            "SnapshotId": "snap-0c0741a8e3cec4472",
+            "StartTime": "2026-03-27T22:27:59.051000+00:00",
+            "State": "completed",
+            "VolumeId": "vol-02ac31ae62c398f91",
+            "VolumeSize": 8,
+            "StorageTier": "standard"
+        }
+    ]
+}
