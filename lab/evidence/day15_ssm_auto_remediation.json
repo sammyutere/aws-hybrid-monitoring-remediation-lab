@@ -1,0 +1,1291 @@
+{
+    "CommandInvocations": [
+        {
+            "CommandId": "9e3c7da4-984e-4fa7-a2fd-e11d53d95882",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-27T23:10:25.372000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-27T23:10:25.716000+00:00",
+                    "ResponseFinishDateTime": "2026-03-27T23:10:25.760000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "79d00006-495a-4fe4-886f-00c973a97941",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-16T09:35:50.537000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-16T09:35:50.672000+00:00",
+                    "ResponseFinishDateTime": "2026-03-16T09:35:50.728000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "180e60ff-f731-4447-9007-dfe3d8e34991",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-15T23:15:35.930000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-15T23:15:36.047000+00:00",
+                    "ResponseFinishDateTime": "2026-03-15T23:15:36.104000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "79d5bb3c-8ac3-4c52-ae2b-3b86845a5667",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-15T23:00:39.280000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-15T23:00:39.427000+00:00",
+                    "ResponseFinishDateTime": "2026-03-15T23:00:39.485000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "af02e700-593e-48d1-baee-e84260d52ec0",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-15T20:50:38.704000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-15T20:50:38.879000+00:00",
+                    "ResponseFinishDateTime": "2026-03-15T20:50:38.937000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "4c63b7f6-5e6b-41b6-8a12-2977ed50444d",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-15T20:40:51.429000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-15T20:40:51.575000+00:00",
+                    "ResponseFinishDateTime": "2026-03-15T20:40:51.632000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "7ff50b77-8294-4ece-a227-9b8e3d009690",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-15T20:16:07.103000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-15T20:16:07.237000+00:00",
+                    "ResponseFinishDateTime": "2026-03-15T20:16:07.295000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "cb17bc06-9342-4ee9-b859-ab5fb591c440",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-15T20:11:09.124000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-15T20:11:09.263000+00:00",
+                    "ResponseFinishDateTime": "2026-03-15T20:11:09.322000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "60cb43f8-65f5-4b00-bb69-ab2e76978266",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-10T01:12:54.761000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-10T01:12:54.902000+00:00",
+                    "ResponseFinishDateTime": "2026-03-10T01:12:54.961000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "6fefa180-fbdf-4393-9b66-9ce2e2f4a537",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-10T00:03:01.043000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-10T00:03:01.211000+00:00",
+                    "ResponseFinishDateTime": "2026-03-10T00:03:01.280000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "499afad9-9d10-4a7b-85ef-f3146bc4c370",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T21:30:20.392000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T21:30:20.528000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T21:30:20.590000+00:00",
+                    "Output": "● node_exporter.service - Prometheus Node Exporter\n   Loaded: loaded (/etc/systemd/system/node_exporter.service; enabled; vendor preset: disabled)\n   Active: active (running) since Mon 2026-03-09 21:19:02 UTC; 11min ago\n Main PID: 10134 (node_exporter)\n   CGroup: /system.slice/node_exporter.service\n           └─10134 /usr/local/bin/node_exporter\n\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=time\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=timex\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=udp_queues\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=uname\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=vmstat\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=watchdog\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=xfs\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=zfs\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=tls_config.go:313 level=info msg=\"Listening on\" address=[::]:9100\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=tls_config.go:316 level=info msg=\"TLS is disabled.\" http2=false address=[::]:9100\n",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "aee8cc51-6e2d-4fdb-9737-fa191097cc79",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T21:22:15.548000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T21:22:15.679000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T21:22:15.763000+00:00",
+                    "Output": "Mar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=pressure\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=rapl\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=schedstat\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=selinux\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=sockstat\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=softnet\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=stat\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=tapestats\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=textfile\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=thermal_zone\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=time\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=timex\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=udp_queues\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=uname\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=vmstat\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z caller=node_exporter.go:118 level=info collector=watchdog\nMar 09 21:19:02 ip-10-0-1-43.ec2.internal node_exporter[10134]: ts=2026-03-09T21:19:02.679Z\n---Output truncated---",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "87fd7844-d7f9-486f-81d7-64a75bf7cc56",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T21:19:02.461000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T21:19:02.610000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T21:19:02.671000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "f177150b-840d-44b2-a804-dfdf75b0ed99",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T20:48:38.790000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T20:48:38.949000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T20:48:39.003000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "288b9a15-485c-41cc-99dc-2f68e23d8d0a",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T20:46:39.825000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T20:46:39.978000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T20:46:40.030000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "0430a75d-ebfd-4cf3-bb2b-e6fde555d61c",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T20:30:26.343000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T20:30:26.472000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T20:30:26.527000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "15ff30a8-33f2-47ae-9066-96d098a69a6d",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-08T11:40:35.072000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-08T11:40:35.216000+00:00",
+                    "ResponseFinishDateTime": "2026-03-08T11:40:35.274000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "83cb8341-b573-44be-bd0d-065dd14dd5c4",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-05T13:17:18.278000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-05T13:17:18.427000+00:00",
+                    "ResponseFinishDateTime": "2026-03-05T13:17:18.484000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "21ac5d4c-d3b8-4c3b-ba42-27f6068c2816",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-05T13:02:01.973000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-05T13:02:02.113000+00:00",
+                    "ResponseFinishDateTime": "2026-03-05T13:02:02.168000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "b7797d77-5b1d-4b82-9a92-a0bc422dbe15",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-04T22:58:49.406000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-04T22:58:49.525000+00:00",
+                    "ResponseFinishDateTime": "2026-03-04T22:58:49.580000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "b7e821fc-c140-42b6-8da5-4896ff550078",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-04T22:58:08.356000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-04T22:58:08.478000+00:00",
+                    "ResponseFinishDateTime": "2026-03-04T22:58:08.536000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "7bd88e57-1ea7-44d3-8d56-c68bc4b10b07",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-03T18:22:28.730000+00:00",
+            "Status": "Failed",
+            "StatusDetails": "Failed",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Failed",
+                    "StatusDetails": "Failed",
+                    "ResponseCode": 1,
+                    "ResponseStartDateTime": "2026-03-03T18:22:29.087000+00:00",
+                    "ResponseFinishDateTime": "2026-03-03T18:22:29.801000+00:00",
+                    "Output": "Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\nNo package stress available.\n\n----------ERROR-------\nError: Nothing to do\nfailed to run commands: exit status 1",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "0eae541b-49f4-42c0-aefc-fc062a977e40",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-15T22:58:01.266000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-15T22:58:01.436000+00:00",
+                    "ResponseFinishDateTime": "2026-03-15T22:58:01.596000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "e32b3cad-d45e-4664-8353-4f12246b7821",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-15T13:00:06.826000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-15T13:00:06.997000+00:00",
+                    "ResponseFinishDateTime": "2026-03-15T13:00:07.112000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "82cd6208-3e44-4b0a-be0b-7d6bb69ce228",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T23:48:43.350000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T23:48:43.466000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T23:48:43.523000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "6c599afe-bf5f-4fdc-91b5-e10b89bf5128",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T21:14:06.243000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T21:14:06.379000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T21:14:06.433000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "b9fad86c-9afd-4340-9eb5-1059c809f4db",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T21:04:39.693000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T21:04:39.821000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T21:04:39.875000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "f87296e7-0e8a-4e25-a5a9-cea96a8c5e67",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T20:59:33.926000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T20:59:34.051000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T20:59:34.104000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "2676ec00-7ff0-4ad0-bf31-db49b6c046fd",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-09T20:31:09.442000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-09T20:31:09.571000+00:00",
+                    "ResponseFinishDateTime": "2026-03-09T20:31:09.627000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "6f3c1b69-35f4-4e0a-9bab-e2cb01956878",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-08T01:21:03.010000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-08T01:21:03.183000+00:00",
+                    "ResponseFinishDateTime": "2026-03-08T01:21:03.248000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "2d579cf4-ffc0-4067-b951-54ae197ace39",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-06T14:19:09.887000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-06T14:19:10.021000+00:00",
+                    "ResponseFinishDateTime": "2026-03-06T14:19:10.076000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "68a45852-00e5-45b5-9a33-d4d819c21417",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-06T14:08:11.953000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-06T14:08:12.076000+00:00",
+                    "ResponseFinishDateTime": "2026-03-06T14:08:12.129000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "9d74ddfd-da19-49f5-8dc2-1772243eda3b",
+            "InstanceId": "i-036af2e244fc9b8dc",
+            "InstanceName": "ip-10-0-1-43.ec2.internal",
+            "Comment": "",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "$DEFAULT",
+            "RequestedDateTime": "2026-03-06T14:00:51.261000+00:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "StandardOutputUrl": "",
+            "StandardErrorUrl": "",
+            "CommandPlugins": [
+                {
+                    "Name": "aws:runShellScript",
+                    "Status": "Success",
+                    "StatusDetails": "Success",
+                    "ResponseCode": 0,
+                    "ResponseStartDateTime": "2026-03-06T14:00:51.425000+00:00",
+                    "ResponseFinishDateTime": "2026-03-06T14:00:51.477000+00:00",
+                    "Output": "",
+                    "StandardOutputUrl": "",
+                    "StandardErrorUrl": "",
+                    "OutputS3Region": "us-east-1",
+                    "OutputS3BucketName": "",
+                    "OutputS3KeyPrefix": ""
+                }
+            ],
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        }
+    ]
+}

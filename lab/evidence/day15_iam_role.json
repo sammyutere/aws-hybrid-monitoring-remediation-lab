@@ -1,0 +1,23 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "Day15-EventBridge-SSM-Role",
+        "RoleId": "AROAVXNA7YG4FQ45NZXGZ",
+        "Arn": "arn:aws:iam::393864004024:role/Day15-EventBridge-SSM-Role",
+        "CreateDate": "2026-03-29T15:34:56+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "events.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "RoleLastUsed": {}
+    }
+}

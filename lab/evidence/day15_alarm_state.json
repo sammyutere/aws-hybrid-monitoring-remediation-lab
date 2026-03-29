@@ -1,0 +1,26 @@
+{
+    "MetricAlarms": [
+        {
+            "AlarmName": "Day14-HighCPU-System",
+            "AlarmArn": "arn:aws:cloudwatch:us-east-1:393864004024:alarm:Day14-HighCPU-System",
+            "AlarmConfigurationUpdatedTimestamp": "2026-03-27T22:56:49.350000+00:00",
+            "ActionsEnabled": true,
+            "OKActions": [],
+            "AlarmActions": [],
+            "InsufficientDataActions": [],
+            "StateValue": "INSUFFICIENT_DATA",
+            "StateReason": "Unchecked: Initial alarm creation",
+            "StateUpdatedTimestamp": "2026-03-27T22:56:49.350000+00:00",
+            "MetricName": "cpu_usage_system",
+            "Namespace": "HybridLinuxLab",
+            "Statistic": "Average",
+            "Dimensions": [],
+            "Period": 60,
+            "EvaluationPeriods": 5,
+            "Threshold": 70.0,
+            "ComparisonOperator": "GreaterThanThreshold",
+            "StateTransitionedTimestamp": "2026-03-27T22:56:49.350000+00:00"
+        }
+    ],
+    "CompositeAlarms": []
+}
