@@ -1,0 +1,5 @@
+Add the following Day 16 panels to Grafana:
+1. job:node_exporter:up:ratio_24h
+2. job:node_exporter:up:ratio_1h
+3. job:node_exporter:error_budget_remaining_24h
+4. ALERTS{alertname=~"NodeExporterSLOBreaching|NodeExporterFastBurn"}

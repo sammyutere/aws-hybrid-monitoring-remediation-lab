@@ -1,0 +1,3 @@
+Checking /etc/prometheus/rules/day16-slo-rules.yml
+  SUCCESS: 6 rules found
+

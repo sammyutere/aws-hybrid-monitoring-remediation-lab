@@ -1,0 +1,149 @@
+{
+  "status": "success",
+  "data": {
+    "groups": [
+      {
+        "name": "node-basic",
+        "file": "/etc/prometheus/rules/alert_rules.yml",
+        "rules": [
+          {
+            "state": "inactive",
+            "name": "NodeExporterDown",
+            "query": "up{job=\"aws-node\"} == 0",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "page"
+            },
+            "annotations": {
+              "description": "Prometheus cannot scrape node_exporter for 2m. Check reachability, SG my_ip/32, exporter process, and instance health.",
+              "summary": "Node exporter down on {{ $labels.instance }}"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000709767,
+            "lastEvaluation": "2026-03-30T16:09:59.137966619Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.000791719,
+        "lastEvaluation": "2026-03-30T16:09:59.137893391Z"
+      },
+      {
+        "name": "node-warning",
+        "file": "/etc/prometheus/rules/alert_rules.yml",
+        "rules": [
+          {
+            "state": "inactive",
+            "name": "HighMemoryUsage",
+            "query": "(node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) < 0.2",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "ticket"
+            },
+            "annotations": {
+              "description": "Available memory below 20% for 2 minutes.",
+              "summary": "Memory usage high on {{ $labels.instance }}"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000676825,
+            "lastEvaluation": "2026-03-30T16:09:22.187395912Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.000746915,
+        "lastEvaluation": "2026-03-30T16:09:22.187331526Z"
+      },
+      {
+        "name": "day16-slo-rules",
+        "file": "/etc/prometheus/rules/day16-slo-rules.yml",
+        "rules": [
+          {
+            "name": "job:node_exporter:up:ratio_5m",
+            "query": "avg_over_time(up{job=\"node_exporter\"}[5m])",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000393397,
+            "lastEvaluation": "2026-03-30T16:09:51.678908958Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:node_exporter:up:ratio_1h",
+            "query": "avg_over_time(up{job=\"node_exporter\"}[1h])",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000083018,
+            "lastEvaluation": "2026-03-30T16:09:51.679312352Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:node_exporter:up:ratio_24h",
+            "query": "avg_over_time(up{job=\"node_exporter\"}[1d])",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000126024,
+            "lastEvaluation": "2026-03-30T16:09:51.679402165Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:node_exporter:error_budget_remaining_24h",
+            "query": "(job:node_exporter:up:ratio_24h - 0.99) / (1 - 0.99)",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000203731,
+            "lastEvaluation": "2026-03-30T16:09:51.679536071Z",
+            "type": "recording"
+          },
+          {
+            "state": "inactive",
+            "name": "NodeExporterSLOBreaching",
+            "query": "job:node_exporter:up:ratio_24h < 0.99",
+            "duration": 300,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "ticket"
+            },
+            "annotations": {
+              "description": "The 24h availability ratio for node_exporter is below 99%.",
+              "summary": "Node exporter SLO breach detected"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000095687,
+            "lastEvaluation": "2026-03-30T16:09:51.679751548Z",
+            "type": "alerting"
+          },
+          {
+            "state": "inactive",
+            "name": "NodeExporterFastBurn",
+            "query": "job:node_exporter:up:ratio_1h < 0.95",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "page"
+            },
+            "annotations": {
+              "description": "The 1h availability ratio is below 95%, indicating rapid budget consumption.",
+              "summary": "Node exporter fast error budget burn"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000170402,
+            "lastEvaluation": "2026-03-30T16:09:51.679855821Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.001180838,
+        "lastEvaluation": "2026-03-30T16:09:51.678852046Z"
+      }
+    ]
+  }
+}
