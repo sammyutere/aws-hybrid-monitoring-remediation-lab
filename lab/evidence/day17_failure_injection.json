@@ -1,0 +1,48 @@
+{
+    "Command": {
+        "CommandId": "27cf5e80-61ff-4504-b8fb-1fb96ba235d5",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "$DEFAULT",
+        "Comment": "",
+        "ExpiresAfter": "2026-04-02T01:19:45.471000+01:00",
+        "Parameters": {
+            "commands": [
+                "sudo systemctl stop node_exporter",
+                "sleep 300",
+                "sudo systemctl start node_exporter"
+            ]
+        },
+        "InstanceIds": [
+            "i-036af2e244fc9b8dc"
+        ],
+        "Targets": [],
+        "RequestedDateTime": "2026-04-01T23:19:45.471000+01:00",
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3Region": "us-east-1",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        },
+        "TimeoutSeconds": 3600,
+        "AlarmConfiguration": {
+            "IgnorePollAlarmFailure": false,
+            "Alarms": []
+        },
+        "TriggeredAlarms": []
+    }
+}

@@ -1,0 +1,47 @@
+groups:
+  - name: day17-burn-rate
+    rules:
+
+      # Error rate (inverse of availability)
+      - record: job:aws_node:error_rate_5m
+        expr: 1 - job:aws_node:up:ratio_5m
+
+      - record: job:aws_node:error_rate_1h
+        expr: 1 - job:aws_node:up:ratio_1h
+
+      # Burn rate calculations
+      - record: job:aws_node:burn_rate_5m
+        expr: job:aws_node:error_rate_5m / 0.01
+
+      - record: job:aws_node:burn_rate_1h
+        expr: job:aws_node:error_rate_1h / 0.01
+
+      # Fast burn (page immediately)
+      - alert: AwsNodeFastBurnCritical
+        expr: job:aws_node:burn_rate_5m > 14
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Fast burn rate critical"
+          description: "Error budget burning >14x faster than allowed"
+
+      # Medium burn (page)
+      - alert: AwsNodeBurnRateHigh
+        expr: job:aws_node:burn_rate_1h > 6
+        for: 5m
+        labels:
+          severity: page
+        annotations:
+          summary: "High burn rate detected"
+          description: "Error budget consumption elevated"
+
+      # Slow burn (ticket only)
+      - alert: AwsNodeBurnRateSlow
+        expr: job:aws_node:burn_rate_1h > 3
+        for: 10m
+        labels:
+          severity: ticket
+        annotations:
+          summary: "Slow burn rate"
+          description: "Gradual error budget consumption"

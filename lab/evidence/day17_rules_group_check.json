@@ -1,0 +1,103 @@
+{
+  "name": "day17-burn-rate",
+  "file": "/etc/prometheus/rules/day17-burn-rate-rules.yml",
+  "rules": [
+    {
+      "name": "job:aws_node:error_rate_5m",
+      "query": "1 - job:aws_node:up:ratio_5m",
+      "labels": {},
+      "health": "ok",
+      "evaluationTime": 0.001341306,
+      "lastEvaluation": "2026-04-01T22:15:49.249787382Z",
+      "type": "recording"
+    },
+    {
+      "name": "job:aws_node:error_rate_1h",
+      "query": "1 - job:aws_node:up:ratio_1h",
+      "labels": {},
+      "health": "ok",
+      "evaluationTime": 0.000397397,
+      "lastEvaluation": "2026-04-01T22:15:49.251156114Z",
+      "type": "recording"
+    },
+    {
+      "name": "job:aws_node:burn_rate_5m",
+      "query": "job:aws_node:error_rate_5m / 0.01",
+      "labels": {},
+      "health": "ok",
+      "evaluationTime": 0.000250404,
+      "lastEvaluation": "2026-04-01T22:15:49.251568493Z",
+      "type": "recording"
+    },
+    {
+      "name": "job:aws_node:burn_rate_1h",
+      "query": "job:aws_node:error_rate_1h / 0.01",
+      "labels": {},
+      "health": "ok",
+      "evaluationTime": 0.000219274,
+      "lastEvaluation": "2026-04-01T22:15:49.251832571Z",
+      "type": "recording"
+    },
+    {
+      "state": "inactive",
+      "name": "AwsNodeFastBurnCritical",
+      "query": "job:aws_node:burn_rate_5m > 14",
+      "duration": 60,
+      "keepFiringFor": 0,
+      "labels": {
+        "severity": "critical"
+      },
+      "annotations": {
+        "description": "Error budget burning more than 14 times faster than allowed.",
+        "summary": "Fast burn rate critical"
+      },
+      "alerts": [],
+      "health": "ok",
+      "evaluationTime": 0.00101528,
+      "lastEvaluation": "2026-04-01T22:15:49.252065752Z",
+      "type": "alerting"
+    },
+    {
+      "state": "inactive",
+      "name": "AwsNodeBurnRateHigh",
+      "query": "job:aws_node:burn_rate_1h > 6",
+      "duration": 300,
+      "keepFiringFor": 0,
+      "labels": {
+        "severity": "page"
+      },
+      "annotations": {
+        "description": "Error budget consumption is elevated.",
+        "summary": "High burn rate detected"
+      },
+      "alerts": [],
+      "health": "ok",
+      "evaluationTime": 0.000138913,
+      "lastEvaluation": "2026-04-01T22:15:49.253093194Z",
+      "type": "alerting"
+    },
+    {
+      "state": "inactive",
+      "name": "AwsNodeBurnRateSlow",
+      "query": "job:aws_node:burn_rate_1h > 3",
+      "duration": 600,
+      "keepFiringFor": 0,
+      "labels": {
+        "severity": "ticket"
+      },
+      "annotations": {
+        "description": "Error budget is being consumed gradually.",
+        "summary": "Slow burn rate detected"
+      },
+      "alerts": [],
+      "health": "ok",
+      "evaluationTime": 0.000068429,
+      "lastEvaluation": "2026-04-01T22:15:49.253243433Z",
+      "type": "alerting"
+    }
+  ],
+  "interval": 60,
+  "limit": 0,
+  "evaluationTime": 0.003585679,
+  "lastEvaluation": "2026-04-01T22:15:49.24973158Z"
+}

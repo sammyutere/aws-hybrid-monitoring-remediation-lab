@@ -1,0 +1,149 @@
+{
+  "status": "success",
+  "data": {
+    "groups": [
+      {
+        "name": "node-basic",
+        "file": "/etc/prometheus/rules/alert_rules.yml",
+        "rules": [
+          {
+            "state": "inactive",
+            "name": "NodeExporterDown",
+            "query": "up{job=\"aws-node\"} == 0",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "page"
+            },
+            "annotations": {
+              "description": "Prometheus cannot scrape node_exporter for 2m. Check reachability, SG my_ip/32, exporter process, and instance health.",
+              "summary": "Node exporter down on {{ $labels.instance }}"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000499071,
+            "lastEvaluation": "2026-04-01T21:20:58.912729905Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.000555373,
+        "lastEvaluation": "2026-04-01T21:20:58.912680465Z"
+      },
+      {
+        "name": "node-warning",
+        "file": "/etc/prometheus/rules/alert_rules.yml",
+        "rules": [
+          {
+            "state": "inactive",
+            "name": "HighMemoryUsage",
+            "query": "(node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) < 0.2",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "ticket"
+            },
+            "annotations": {
+              "description": "Available memory below 20% for 2 minutes.",
+              "summary": "Memory usage high on {{ $labels.instance }}"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000382218,
+            "lastEvaluation": "2026-04-01T21:20:21.961301261Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.000425996,
+        "lastEvaluation": "2026-04-01T21:20:21.961263297Z"
+      },
+      {
+        "name": "day16-slo-rules",
+        "file": "/etc/prometheus/rules/day16-slo-rules.yml",
+        "rules": [
+          {
+            "name": "job:aws_node:up:ratio_5m",
+            "query": "avg_over_time(up{job=\"aws-node\"}[5m])",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000707052,
+            "lastEvaluation": "2026-04-01T21:20:51.458447766Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:aws_node:up:ratio_1h",
+            "query": "avg_over_time(up{job=\"aws-node\"}[1h])",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000335138,
+            "lastEvaluation": "2026-04-01T21:20:51.459186483Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:aws_node:up:ratio_24h",
+            "query": "avg_over_time(up{job=\"aws-node\"}[1d])",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.001027561,
+            "lastEvaluation": "2026-04-01T21:20:51.459535977Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:aws_node:error_budget_remaining_24h",
+            "query": "(job:aws_node:up:ratio_24h - 0.99) / (1 - 0.99)",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000425496,
+            "lastEvaluation": "2026-04-01T21:20:51.460639566Z",
+            "type": "recording"
+          },
+          {
+            "state": "inactive",
+            "name": "AwsNodeSLOBreaching",
+            "query": "job:aws_node:up:ratio_24h < 0.99",
+            "duration": 300,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "ticket"
+            },
+            "annotations": {
+              "description": "24h availability below 99%.",
+              "summary": "aws-node SLO breach detected"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000251023,
+            "lastEvaluation": "2026-04-01T21:20:51.461083391Z",
+            "type": "alerting"
+          },
+          {
+            "state": "inactive",
+            "name": "AwsNodeFastBurn",
+            "query": "job:aws_node:up:ratio_1h < 0.95",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "page"
+            },
+            "annotations": {
+              "description": "1h availability below 95%.",
+              "summary": "aws-node fast error budget burn"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000134568,
+            "lastEvaluation": "2026-04-01T21:20:51.461346879Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.003084867,
+        "lastEvaluation": "2026-04-01T21:20:51.458402558Z"
+      }
+    ]
+  }
+}

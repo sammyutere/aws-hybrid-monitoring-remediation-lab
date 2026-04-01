@@ -1,0 +1,37 @@
+{
+  "status": "success",
+  "data": {
+    "alerts": [
+      {
+        "labels": {
+          "alertname": "AwsNodeSLOBreaching",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "ticket"
+        },
+        "annotations": {
+          "description": "24h availability below 99%.",
+          "summary": "aws-node SLO breach detected"
+        },
+        "state": "pending",
+        "activeAt": "2026-04-01T22:31:51.807411735Z",
+        "value": "9.83739837398374e-01"
+      },
+      {
+        "labels": {
+          "alertname": "AwsNodeBurnRateSlow",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "ticket"
+        },
+        "annotations": {
+          "description": "Error budget is being consumed gradually.",
+          "summary": "Slow burn rate detected"
+        },
+        "state": "pending",
+        "activeAt": "2026-04-01T22:32:49.289296405Z",
+        "value": "3.015075376884424e+00"
+      }
+    ]
+  }
+}

@@ -4,6 +4,7 @@ global:
 rule_files:
   - /etc/prometheus/rules/alert_rules.yml
   - /etc/prometheus/rules/day16-slo-rules.yml
+  - /etc/prometheus/rules/day17-burn-rate-rules.yml
 
 alerting:
   alertmanagers:
