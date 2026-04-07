@@ -1,0 +1,30 @@
+[
+  {
+    "annotations": {
+      "description": "24h availability below 99%.",
+      "summary": "aws-node SLO breach detected"
+    },
+    "endsAt": "2026-04-07T20:13:51.807Z",
+    "fingerprint": "2d9c7d6b941ad4ab",
+    "receivers": [
+      {
+        "name": "ticket-webhook"
+      }
+    ],
+    "startsAt": "2026-04-07T20:07:51.807Z",
+    "status": {
+      "inhibitedBy": [],
+      "mutedBy": [],
+      "silencedBy": [],
+      "state": "active"
+    },
+    "updatedAt": "2026-04-07T20:10:38.747Z",
+    "generatorURL": "http://61712713de00:9090/graph?g0.expr=job%3Aaws_node%3Aup%3Aratio_24h+%3C+0.99&g0.tab=1",
+    "labels": {
+      "alertname": "AwsNodeSLOBreaching",
+      "instance": "184.73.6.214:9100",
+      "job": "aws-node",
+      "severity": "ticket"
+    }
+  }
+]
