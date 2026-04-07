@@ -2,13 +2,17 @@ global:
   resolve_timeout: 5m
 
 route:
-  receiver: default-receiver
-  group_by: ["alertname", "instance"]
-  group_wait: 30s
-  group_interval: 5m
-  repeat_interval: 4h
+  group_by: ['alertname', 'job', 'severity']
+  group_wait: 15s
+  group_interval: 1m
+  repeat_interval: 30m
+  receiver: default-ticket
 
   routes:
+    - matchers:
+        - severity="critical"
+      receiver: critical-receiver
+
     - matchers:
         - severity="page"
       receiver: page-receiver
@@ -18,10 +22,22 @@ route:
       receiver: ticket-receiver
 
 receivers:
-  - name: default-receiver
+  - name: default-ticket
+    webhook_configs:
+      - url: http://test-receiver:5001/default
+        send_resolved: true
 
-  - name: ticket-receiver
+  - name: critical-receiver
+    webhook_configs:
+      - url: http://test-receiver:5001/critical
+        send_resolved: true
 
   - name: page-receiver
     webhook_configs:
-      - url: "http://host.docker.internal:5001"
+      - url: http://test-receiver:5001/page
+        send_resolved: true
+
+  - name: ticket-receiver
+    webhook_configs:
+      - url: http://test-receiver:5001/ticket
+        send_resolved: true

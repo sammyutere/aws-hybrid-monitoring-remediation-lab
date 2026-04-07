@@ -29,5 +29,16 @@ services:
       - grafana-storage:/var/lib/grafana
     restart: unless-stopped
 
+  test-receiver:
+    image: python:3.11-slim
+    container_name: test-receiver
+    working_dir: /app
+    command: python day19_test_receiver.py
+    ports:
+      - "5001:5001"
+    volumes:
+      - ../tools:/app:ro
+    restart: unless-stopped
+
 volumes:
   grafana-storage:
