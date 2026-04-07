@@ -1,0 +1,90 @@
+{
+  "title": "AWS Hybrid Reliability Overview",
+  "tags": ["day18", "slo", "burn-rate", "aws-node"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "30s",
+  "panels": [
+    {
+      "title": "Current exporter reachability",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "up{job=\"aws-node\"}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "title": "SLI ratio (5m)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "job:aws_node:up:ratio_5m",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "title": "SLI ratio (1h)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "job:aws_node:up:ratio_1h",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "title": "SLO ratio (24h)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "job:aws_node:up:ratio_24h",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "title": "Error budget remaining (24h)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "job:aws_node:error_budget_remaining_24h",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "title": "Burn rate (5m)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "job:aws_node:burn_rate_5m",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "title": "Burn rate (1h)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "job:aws_node:burn_rate_1h",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "title": "Active SLO and burn-rate alerts",
+      "type": "table",
+      "targets": [
+        {
+          "expr": "ALERTS{alertname=~\"AwsNodeSLOBreaching|AwsNodeFastBurnCritical|AwsNodeBurnRateHigh|AwsNodeBurnRateSlow\"}",
+          "refId": "A"
+        }
+      ]
+    }
+  ]
+}

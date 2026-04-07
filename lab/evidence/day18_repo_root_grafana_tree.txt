@@ -1,0 +1,15 @@
+dashboards
+provisioning
+
+../grafana/dashboards:
+day18-slo-dashboard.json
+
+../grafana/provisioning:
+dashboards
+datasources
+
+../grafana/provisioning/dashboards:
+dashboards.yml
+
+../grafana/provisioning/datasources:
+prometheus.yml

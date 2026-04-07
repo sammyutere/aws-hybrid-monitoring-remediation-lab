@@ -1,0 +1,2 @@
+/etc/grafana/dashboards:
+day18-slo-dashboard.json

@@ -1,0 +1,9 @@
+/etc/grafana/provisioning:
+dashboards
+datasources
+
+/etc/grafana/provisioning/dashboards:
+dashboards.yml
+
+/etc/grafana/provisioning/datasources:
+prometheus.yml
