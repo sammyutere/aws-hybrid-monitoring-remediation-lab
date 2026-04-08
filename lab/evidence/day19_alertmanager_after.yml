@@ -11,33 +11,33 @@ route:
   routes:
     - matchers:
         - severity="critical"
-      receiver: critical-webhook
+      receiver: critical-receiver
 
     - matchers:
         - severity="page"
-      receiver: page-webhook
+      receiver: page-receiver
 
     - matchers:
         - severity="ticket"
-      receiver: ticket-webhook
+      receiver: ticket-receiver
 
 receivers:
   - name: default-ticket
     webhook_configs:
-      - url: http://host.docker.internal:5001/default
+      - url: http://test-receiver:5001/default
         send_resolved: true
 
-  - name: critical-webhook
+  - name: critical-receiver
     webhook_configs:
-      - url: http://host.docker.internal:5001/critical
+      - url: http://test-receiver:5001/critical
         send_resolved: true
 
-  - name: page-webhook
+  - name: page-receiver
     webhook_configs:
-      - url: http://host.docker.internal:5001/page
+      - url: http://test-receiver:5001/page
         send_resolved: true
 
-  - name: ticket-webhook
+  - name: ticket-receiver
     webhook_configs:
-      - url: http://host.docker.internal:5001/ticket
+      - url: http://test-receiver:5001/ticket
         send_resolved: true

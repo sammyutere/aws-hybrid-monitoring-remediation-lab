@@ -33,7 +33,7 @@ services:
     image: python:3.11-slim
     container_name: test-receiver
     working_dir: /app
-    command: python -u day19_test_receiver.py
+    command: python day19_test_receiver.py
     ports:
       - "5001:5001"
     volumes:

@@ -4,18 +4,33 @@
     "alerts": [
       {
         "labels": {
-          "alertname": "AwsNodeSLOBreaching",
+          "alertname": "AwsNodeFastBurnCritical",
           "instance": "184.73.6.214:9100",
           "job": "aws-node",
-          "severity": "ticket"
+          "severity": "critical"
         },
         "annotations": {
-          "description": "24h availability below 99%.",
-          "summary": "aws-node SLO breach detected"
+          "description": "Error budget burning more than 14 times faster than allowed.",
+          "summary": "Fast burn rate critical"
         },
         "state": "firing",
-        "activeAt": "2026-04-07T20:02:51.807411735Z",
-        "value": "9.762340036563071e-01"
+        "activeAt": "2026-04-07T23:38:49.289296405Z",
+        "value": "6e+01"
+      },
+      {
+        "labels": {
+          "alertname": "AwsNodeBurnRateHigh",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "page"
+        },
+        "annotations": {
+          "description": "Error budget consumption is elevated.",
+          "summary": "High burn rate detected"
+        },
+        "state": "pending",
+        "activeAt": "2026-04-07T23:40:49.289296405Z",
+        "value": "8.75912408759124e+00"
       },
       {
         "labels": {
@@ -29,8 +44,38 @@
           "summary": "Slow burn rate detected"
         },
         "state": "pending",
-        "activeAt": "2026-04-07T20:03:49.289296405Z",
-        "value": "5.000000000000004e+00"
+        "activeAt": "2026-04-07T23:39:49.289296405Z",
+        "value": "8.75912408759124e+00"
+      },
+      {
+        "labels": {
+          "alertname": "AwsNodeSLOBreaching",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "ticket"
+        },
+        "annotations": {
+          "description": "24h availability below 99%.",
+          "summary": "aws-node SLO breach detected"
+        },
+        "state": "pending",
+        "activeAt": "2026-04-07T23:37:51.807411735Z",
+        "value": "9.148936170212766e-01"
+      },
+      {
+        "labels": {
+          "alertname": "AwsNodeFastBurn",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "page"
+        },
+        "annotations": {
+          "description": "1h availability below 95%.",
+          "summary": "aws-node fast error budget burn"
+        },
+        "state": "firing",
+        "activeAt": "2026-04-07T23:38:51.807411735Z",
+        "value": "9.148936170212766e-01"
       }
     ]
   }

@@ -1,10 +1,10 @@
 {
     "Command": {
-        "CommandId": "e4b33a98-cab5-4a49-808e-53ac68f84c11",
+        "CommandId": "6e1a407f-d3fa-43a3-aec5-0da8b0bbfa57",
         "DocumentName": "AWS-RunShellScript",
         "DocumentVersion": "$DEFAULT",
         "Comment": "",
-        "ExpiresAfter": "2026-04-07T23:00:49.262000+01:00",
+        "ExpiresAfter": "2026-04-08T02:37:13.763000+01:00",
         "Parameters": {
             "commands": [
                 "sudo systemctl stop node_exporter",
@@ -16,7 +16,7 @@
             "i-036af2e244fc9b8dc"
         ],
         "Targets": [],
-        "RequestedDateTime": "2026-04-07T21:00:49.262000+01:00",
+        "RequestedDateTime": "2026-04-08T00:37:13.763000+01:00",
         "Status": "Pending",
         "StatusDetails": "Pending",
         "OutputS3Region": "us-east-1",

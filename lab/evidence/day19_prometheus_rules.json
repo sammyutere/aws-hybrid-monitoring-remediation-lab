@@ -21,15 +21,15 @@
             },
             "alerts": [],
             "health": "ok",
-            "evaluationTime": 0.000468179,
-            "lastEvaluation": "2026-04-07T19:33:47.86441293Z",
+            "evaluationTime": 0.000543486,
+            "lastEvaluation": "2026-04-07T22:53:58.257697621Z",
             "type": "alerting"
           }
         ],
         "interval": 60,
         "limit": 0,
-        "evaluationTime": 0.000505439,
-        "lastEvaluation": "2026-04-07T19:33:47.864380294Z"
+        "evaluationTime": 0.000610161,
+        "lastEvaluation": "2026-04-07T22:53:58.257637305Z"
       },
       {
         "name": "node-warning",
@@ -50,15 +50,15 @@
             },
             "alerts": [],
             "health": "ok",
-            "evaluationTime": 0.000429903,
-            "lastEvaluation": "2026-04-07T19:34:10.872762924Z",
+            "evaluationTime": 0.000419327,
+            "lastEvaluation": "2026-04-07T22:54:21.264662413Z",
             "type": "alerting"
           }
         ],
         "interval": 60,
         "limit": 0,
-        "evaluationTime": 0.000475886,
-        "lastEvaluation": "2026-04-07T19:34:10.872725022Z"
+        "evaluationTime": 0.000506305,
+        "lastEvaluation": "2026-04-07T22:54:21.264583892Z"
       },
       {
         "name": "day16-slo-rules",
@@ -69,8 +69,8 @@
             "query": "avg_over_time(up{job=\"aws-node\"}[5m])",
             "labels": {},
             "health": "ok",
-            "evaluationTime": 0.000391864,
-            "lastEvaluation": "2026-04-07T19:33:40.414037603Z",
+            "evaluationTime": 0.000310398,
+            "lastEvaluation": "2026-04-07T22:53:50.798076962Z",
             "type": "recording"
           },
           {
@@ -78,8 +78,8 @@
             "query": "avg_over_time(up{job=\"aws-node\"}[1h])",
             "labels": {},
             "health": "ok",
-            "evaluationTime": 0.000198623,
-            "lastEvaluation": "2026-04-07T19:33:40.414440465Z",
+            "evaluationTime": 0.000108749,
+            "lastEvaluation": "2026-04-07T22:53:50.798396874Z",
             "type": "recording"
           },
           {
@@ -87,8 +87,8 @@
             "query": "avg_over_time(up{job=\"aws-node\"}[1d])",
             "labels": {},
             "health": "ok",
-            "evaluationTime": 0.00019591,
-            "lastEvaluation": "2026-04-07T19:33:40.414648161Z",
+            "evaluationTime": 0.00033727,
+            "lastEvaluation": "2026-04-07T22:53:50.798512115Z",
             "type": "recording"
           },
           {
@@ -96,8 +96,8 @@
             "query": "(job:aws_node:up:ratio_24h - 0.99) / (1 - 0.99)",
             "labels": {},
             "health": "ok",
-            "evaluationTime": 0.000328663,
-            "lastEvaluation": "2026-04-07T19:33:40.414853218Z",
+            "evaluationTime": 0.00019069,
+            "lastEvaluation": "2026-04-07T22:53:50.798859203Z",
             "type": "recording"
           },
           {
@@ -115,8 +115,8 @@
             },
             "alerts": [],
             "health": "ok",
-            "evaluationTime": 0.000149081,
-            "lastEvaluation": "2026-04-07T19:33:40.415193067Z",
+            "evaluationTime": 0.000084842,
+            "lastEvaluation": "2026-04-07T22:53:50.799061384Z",
             "type": "alerting"
           },
           {
@@ -134,15 +134,15 @@
             },
             "alerts": [],
             "health": "ok",
-            "evaluationTime": 0.000115271,
-            "lastEvaluation": "2026-04-07T19:33:40.415350973Z",
+            "evaluationTime": 0.00011982,
+            "lastEvaluation": "2026-04-07T22:53:50.799152019Z",
             "type": "alerting"
           }
         ],
         "interval": 60,
         "limit": 0,
-        "evaluationTime": 0.001530833,
-        "lastEvaluation": "2026-04-07T19:33:40.413940397Z"
+        "evaluationTime": 0.00122931,
+        "lastEvaluation": "2026-04-07T22:53:50.798046562Z"
       },
       {
         "name": "day17-burn-rate",
@@ -153,8 +153,8 @@
             "query": "1 - job:aws_node:up:ratio_5m",
             "labels": {},
             "health": "ok",
-            "evaluationTime": 0.000469333,
-            "lastEvaluation": "2026-04-07T19:33:37.917148492Z",
+            "evaluationTime": 0.001211716,
+            "lastEvaluation": "2026-04-07T22:53:48.281635191Z",
             "type": "recording"
           },
           {
@@ -162,8 +162,8 @@
             "query": "1 - job:aws_node:up:ratio_1h",
             "labels": {},
             "health": "ok",
-            "evaluationTime": 0.00018899,
-            "lastEvaluation": "2026-04-07T19:33:37.917631803Z",
+            "evaluationTime": 0.000162409,
+            "lastEvaluation": "2026-04-07T22:53:48.282897332Z",
             "type": "recording"
           },
           {
@@ -171,8 +171,8 @@
             "query": "job:aws_node:error_rate_5m / 0.01",
             "labels": {},
             "health": "ok",
-            "evaluationTime": 0.000130167,
-            "lastEvaluation": "2026-04-07T19:33:37.917828831Z",
+            "evaluationTime": 0.000118982,
+            "lastEvaluation": "2026-04-07T22:53:48.283067046Z",
             "type": "recording"
           },
           {
@@ -180,8 +180,8 @@
             "query": "job:aws_node:error_rate_1h / 0.01",
             "labels": {},
             "health": "ok",
-            "evaluationTime": 0.000105145,
-            "lastEvaluation": "2026-04-07T19:33:37.917968341Z",
+            "evaluationTime": 0.000100221,
+            "lastEvaluation": "2026-04-07T22:53:48.283194563Z",
             "type": "recording"
           },
           {
@@ -199,8 +199,8 @@
             },
             "alerts": [],
             "health": "ok",
-            "evaluationTime": 0.000091467,
-            "lastEvaluation": "2026-04-07T19:33:37.918082413Z",
+            "evaluationTime": 0.000085134,
+            "lastEvaluation": "2026-04-07T22:53:48.283301838Z",
             "type": "alerting"
           },
           {
@@ -218,8 +218,8 @@
             },
             "alerts": [],
             "health": "ok",
-            "evaluationTime": 0.000088214,
-            "lastEvaluation": "2026-04-07T19:33:37.918180596Z",
+            "evaluationTime": 0.000061559,
+            "lastEvaluation": "2026-04-07T22:53:48.283395303Z",
             "type": "alerting"
           },
           {
@@ -237,15 +237,15 @@
             },
             "alerts": [],
             "health": "ok",
-            "evaluationTime": 0.000075133,
-            "lastEvaluation": "2026-04-07T19:33:37.918277711Z",
+            "evaluationTime": 0.00012917,
+            "lastEvaluation": "2026-04-07T22:53:48.283462626Z",
             "type": "alerting"
           }
         ],
         "interval": 60,
         "limit": 0,
-        "evaluationTime": 0.001244407,
-        "lastEvaluation": "2026-04-07T19:33:37.917111027Z"
+        "evaluationTime": 0.002004655,
+        "lastEvaluation": "2026-04-07T22:53:48.281589916Z"
       }
     ]
   }
