@@ -41,21 +41,3 @@ receivers:
     webhook_configs:
       - url: http://test-receiver:5001/ticket
         send_resolved: true
-
-inhibit_rules:
-  - source_matchers:
-      - severity="critical"
-    target_matchers:
-      - severity="page"
-    equal:
-      - alertname
-      - job
-      - instance
-
-  - source_matchers:
-      - severity="page"
-    target_matchers:
-      - severity="ticket"
-    equal:
-      - job
-      - instance

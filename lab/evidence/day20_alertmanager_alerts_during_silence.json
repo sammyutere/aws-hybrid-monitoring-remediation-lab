@@ -1,0 +1,32 @@
+[
+  {
+    "annotations": {
+      "description": "Error budget burning more than 14 times faster than allowed.",
+      "summary": "Fast burn rate critical"
+    },
+    "endsAt": "2026-04-11T20:47:49.289Z",
+    "fingerprint": "f7904b097394c9b3",
+    "receivers": [
+      {
+        "name": "critical-receiver"
+      }
+    ],
+    "startsAt": "2026-04-11T20:43:49.289Z",
+    "status": {
+      "inhibitedBy": [],
+      "mutedBy": [],
+      "silencedBy": [
+        "68a24ef5-6f34-4588-88c6-519ea59ab0b0"
+      ],
+      "state": "suppressed"
+    },
+    "updatedAt": "2026-04-11T20:44:29.583Z",
+    "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aburn_rate_5m+%3E+14&g0.tab=1",
+    "labels": {
+      "alertname": "AwsNodeFastBurnCritical",
+      "instance": "184.73.6.214:9100",
+      "job": "aws-node",
+      "severity": "critical"
+    }
+  }
+]

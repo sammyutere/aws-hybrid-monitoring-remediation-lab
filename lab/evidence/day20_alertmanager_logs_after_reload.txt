@@ -1,0 +1,196 @@
+alertmanager  | time=2026-04-07T23:06:43.390Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-07T23:06:43.390Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-07T23:06:43.391Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.2 port=9094
+alertmanager  | time=2026-04-07T23:06:43.407Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-07T23:06:43.718Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-07T23:06:43.723Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-07T23:06:43.752Z level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9093
+alertmanager  | time=2026-04-07T23:06:43.753Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9093
+alertmanager  | time=2026-04-07T23:06:45.408Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.000285275s
+alertmanager  | time=2026-04-07T23:06:53.389Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.003646189s
+alertmanager  | time=2026-04-10T08:53:56.460Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-10T08:53:56.463Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-10T08:53:56.489Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-10T08:53:56.753Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-10T08:53:57.064Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-10T08:53:57.100Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-10T08:53:57.206Z level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9093
+alertmanager  | time=2026-04-10T08:53:57.206Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9093
+alertmanager  | time=2026-04-10T08:53:58.760Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.001104433s
+alertmanager  | time=2026-04-10T08:54:06.786Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.026779787s
+alertmanager  | time=2026-04-11T20:01:11.184Z level=INFO source=main.go:619 msg="Received SIGTERM, exiting gracefully..."
+alertmanager  | time=2026-04-11T20:01:12.777Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:01:12.779Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:01:12.783Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:01:12.794Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:01:12.899Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:01:12.910Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:01:12.910Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=116.024212ms
+alertmanager  | time=2026-04-11T20:01:15.795Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:01:15.795Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:01:15.810Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:01:15.828Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:01:15.883Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:01:15.891Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:01:15.893Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=64.579474ms
+alertmanager  | time=2026-04-11T20:01:16.902Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:01:16.902Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:01:16.903Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:01:16.927Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:01:17.202Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:01:17.227Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:01:17.231Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=303.63967ms
+alertmanager  | time=2026-04-11T20:01:18.487Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:01:18.488Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:01:18.492Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:01:18.505Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:01:18.599Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:01:18.603Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:01:18.604Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=98.989473ms
+alertmanager  | time=2026-04-11T20:01:19.982Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:01:19.983Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:01:19.985Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:01:20.005Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:01:20.052Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:01:20.059Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:01:20.060Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=54.189263ms
+alertmanager  | time=2026-04-11T20:01:22.456Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:01:22.457Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:01:22.458Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:01:22.478Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:01:22.673Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:01:22.698Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:01:22.702Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=223.876737ms
+alertmanager  | time=2026-04-11T20:01:26.423Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:01:26.423Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:01:26.432Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:01:26.449Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:01:26.495Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:01:26.502Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:01:26.503Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=53.934007ms
+alertmanager  | time=2026-04-11T20:01:33.491Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:01:33.492Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:01:33.493Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:01:33.500Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:01:33.553Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:01:33.557Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:01:33.558Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=57.88786ms
+alertmanager  | time=2026-04-11T20:01:46.976Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:01:46.976Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:01:46.976Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:01:47.027Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:01:47.344Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:01:47.351Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:01:47.352Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=325.131152ms
+alertmanager  | time=2026-04-11T20:02:13.450Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:02:13.450Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:02:13.453Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:02:13.467Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:02:13.545Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:02:13.551Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:02:13.552Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=84.746819ms
+alertmanager  | time=2026-04-11T20:03:05.209Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:03:05.210Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:03:05.211Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:03:05.220Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:03:05.266Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:03:05.274Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:03:05.275Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=55.02969ms
+alertmanager  | time=2026-04-11T20:04:05.740Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:04:05.740Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:04:05.741Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:04:05.750Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:04:05.800Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:04:05.845Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:04:05.846Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=95.790685ms
+alertmanager  | time=2026-04-11T20:05:06.319Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:05:06.319Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:05:06.320Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:05:06.339Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:05:06.403Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:05:06.415Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:05:06.416Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=75.784869ms
+alertmanager  | time=2026-04-11T20:06:06.961Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:06:06.962Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:06:06.963Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:06:06.993Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:06:07.105Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:06:07.112Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:06:07.113Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=118.782083ms
+alertmanager  | time=2026-04-11T20:07:07.628Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:07:07.628Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:07:07.631Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:07:07.665Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:07:07.725Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:07:07.731Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:07:07.732Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=62.062826ms
+alertmanager  | time=2026-04-11T20:08:08.388Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:08:08.388Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:08:08.389Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:08:08.397Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:08:08.478Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:08:08.484Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:08:08.488Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=88.034078ms
+alertmanager  | time=2026-04-11T20:09:09.020Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:09:09.020Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:09:09.022Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:09:09.039Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:09:09.181Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:09:09.198Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:09:09.199Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=160.163872ms
+alertmanager  | time=2026-04-11T20:10:09.851Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:10:09.851Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:10:09.851Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:10:09.865Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:10:09.935Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:10:09.958Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:10:09.959Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=93.619459ms
+alertmanager  | time=2026-04-11T20:11:10.611Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:11:10.611Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:11:10.612Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:11:10.625Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:11:10.674Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:11:10.681Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:11:10.681Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=56.505834ms
+alertmanager  | time=2026-04-11T20:12:11.250Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:12:11.252Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:12:11.253Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:12:11.265Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:12:11.335Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:12:11.339Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:12:11.341Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=75.335634ms
+alertmanager  | time=2026-04-11T20:13:12.078Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:13:12.079Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:13:12.093Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:13:12.119Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:13:12.226Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:13:12.231Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:13:12.233Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=114.149147ms
+alertmanager  | time=2026-04-11T20:14:12.674Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:14:12.674Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:14:12.678Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:14:12.697Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:14:12.777Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:14:12.785Z level=ERROR source=coordinator.go:116 msg="Loading configuration file failed" component=configuration file=/etc/alertmanager/alertmanager.yml err="yaml: line 2: mapping values are not allowed in this context"
+alertmanager  | time=2026-04-11T20:14:12.786Z level=INFO source=cluster.go:691 msg="gossip not settled but continuing anyway" component=cluster polls=0 elapsed=88.585231ms
+alertmanager  | time=2026-04-11T20:15:13.665Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:15:13.667Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:15:13.668Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:15:13.689Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:15:13.867Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:15:13.881Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:15:13.895Z level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9093
+alertmanager  | time=2026-04-11T20:15:13.897Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9093
+alertmanager  | time=2026-04-11T20:15:15.690Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.001234329s
+alertmanager  | time=2026-04-11T20:15:23.672Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.005309142s
+alertmanager  | time=2026-04-11T20:23:39.800Z level=INFO source=main.go:619 msg="Received SIGTERM, exiting gracefully..."
+alertmanager  | time=2026-04-11T20:23:40.627Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-11T20:23:40.627Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-11T20:23:40.629Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-11T20:23:40.648Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-11T20:23:40.732Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:23:40.746Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-11T20:23:40.777Z level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9093
+alertmanager  | time=2026-04-11T20:23:40.777Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9093
+alertmanager  | time=2026-04-11T20:23:42.649Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.001629931s
+alertmanager  | time=2026-04-11T20:23:50.653Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.005209776s

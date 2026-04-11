@@ -1,0 +1,21 @@
+[
+  {
+    "id": "68a24ef5-6f34-4588-88c6-519ea59ab0b0",
+    "status": {
+      "state": "active"
+    },
+    "updatedAt": "2026-04-11T20:36:31.323Z",
+    "comment": "Planned maintenance silence for aws-node",
+    "createdBy": "day20-lab",
+    "endsAt": "2026-04-11T21:05:39.000Z",
+    "matchers": [
+      {
+        "isEqual": true,
+        "isRegex": false,
+        "name": "job",
+        "value": "aws-node"
+      }
+    ],
+    "startsAt": "2026-04-11T20:36:31.323Z"
+  }
+]

@@ -1,0 +1,101 @@
+name: monitoring
+services:
+  alertmanager:
+    container_name: alertmanager
+    image: prom/alertmanager
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 9093
+      published: "9093"
+      protocol: tcp
+    restart: unless-stopped
+    volumes:
+    - type: bind
+      source: /Users/macos/cloud-labs/aws-hybrid-monitoring-remediation-lab/monitoring/alertmanager/alertmanager.yml
+      target: /etc/alertmanager/alertmanager.yml
+      read_only: true
+      bind:
+        create_host_path: true
+  grafana:
+    container_name: grafana
+    image: grafana/grafana
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 3000
+      published: "3000"
+      protocol: tcp
+    restart: unless-stopped
+    volumes:
+    - type: bind
+      source: /Users/macos/cloud-labs/aws-hybrid-monitoring-remediation-lab/grafana/provisioning
+      target: /etc/grafana/provisioning
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/macos/cloud-labs/aws-hybrid-monitoring-remediation-lab/grafana/dashboards
+      target: /etc/grafana/dashboards
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: volume
+      source: grafana-storage
+      target: /var/lib/grafana
+      volume: {}
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 9090
+      published: "9090"
+      protocol: tcp
+    restart: unless-stopped
+    volumes:
+    - type: bind
+      source: /Users/macos/cloud-labs/aws-hybrid-monitoring-remediation-lab/monitoring/prometheus/prometheus.yml
+      target: /etc/prometheus/prometheus.yml
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/macos/cloud-labs/aws-hybrid-monitoring-remediation-lab/monitoring/prometheus/rules
+      target: /etc/prometheus/rules
+      read_only: true
+      bind:
+        create_host_path: true
+  test-receiver:
+    command:
+    - python
+    - -u
+    - day19_test_receiver.py
+    container_name: test-receiver
+    image: python:3.11-slim
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5001
+      published: "5001"
+      protocol: tcp
+    restart: unless-stopped
+    volumes:
+    - type: bind
+      source: /Users/macos/cloud-labs/aws-hybrid-monitoring-remediation-lab/tools
+      target: /app
+      read_only: true
+      bind:
+        create_host_path: true
+    working_dir: /app
+networks:
+  default:
+    name: monitoring_default
+volumes:
+  grafana-storage:
+    name: monitoring_grafana-storage

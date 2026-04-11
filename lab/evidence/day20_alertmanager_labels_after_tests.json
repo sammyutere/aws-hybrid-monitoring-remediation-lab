@@ -1,0 +1,30 @@
+{
+  "alertname": "AwsNodeFastBurn",
+  "instance": "184.73.6.214:9100",
+  "job": "aws-node",
+  "severity": "page"
+}
+{
+  "alertname": "AwsNodeSLOBreaching",
+  "instance": "184.73.6.214:9100",
+  "job": "aws-node",
+  "severity": "ticket"
+}
+{
+  "alertname": "NodeExporterDown",
+  "instance": "184.73.6.214:9100",
+  "job": "aws-node",
+  "severity": "page"
+}
+{
+  "alertname": "AwsNodeBurnRateSlow",
+  "instance": "184.73.6.214:9100",
+  "job": "aws-node",
+  "severity": "ticket"
+}
+{
+  "alertname": "AwsNodeFastBurnCritical",
+  "instance": "184.73.6.214:9100",
+  "job": "aws-node",
+  "severity": "critical"
+}
