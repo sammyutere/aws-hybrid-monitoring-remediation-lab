@@ -1,0 +1,2 @@
+/etc/alertmanager/templates:
+day21-notification.tmpl

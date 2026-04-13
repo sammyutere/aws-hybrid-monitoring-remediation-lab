@@ -1,0 +1,62 @@
+[
+  {
+    "alertname": "AwsNodeFastBurn",
+    "severity": "page",
+    "job": "aws-node",
+    "instance": "184.73.6.214:9100",
+    "status": "active",
+    "startsAt": "2026-04-13T09:17:51.807Z",
+    "summary": "aws-node fast error budget burn",
+    "description": "1h availability below 95%."
+  },
+  {
+    "alertname": "AwsNodeBurnRateHigh",
+    "severity": "page",
+    "job": "aws-node",
+    "instance": "184.73.6.214:9100",
+    "status": "active",
+    "startsAt": "2026-04-13T09:23:49.289Z",
+    "summary": "High burn rate detected",
+    "description": "Error budget consumption is elevated."
+  },
+  {
+    "alertname": "AwsNodeSLOBreaching",
+    "severity": "ticket",
+    "job": "aws-node",
+    "instance": "184.73.6.214:9100",
+    "status": "suppressed",
+    "startsAt": "2026-04-11T20:47:51.807Z",
+    "summary": "aws-node SLO breach detected",
+    "description": "24h availability below 99%."
+  },
+  {
+    "alertname": "NodeExporterDown",
+    "severity": "page",
+    "job": "aws-node",
+    "instance": "184.73.6.214:9100",
+    "status": "active",
+    "startsAt": "2026-04-13T09:17:59.264Z",
+    "summary": "Node exporter down on 184.73.6.214:9100",
+    "description": "Prometheus cannot scrape node_exporter for 2m. Check reachability, SG my_ip/32, exporter process, and instance health."
+  },
+  {
+    "alertname": "AwsNodeBurnRateSlow",
+    "severity": "ticket",
+    "job": "aws-node",
+    "instance": "184.73.6.214:9100",
+    "status": "suppressed",
+    "startsAt": "2026-04-13T09:28:49.289Z",
+    "summary": "Slow burn rate detected",
+    "description": "Error budget is being consumed gradually."
+  },
+  {
+    "alertname": "AwsNodeFastBurnCritical",
+    "severity": "critical",
+    "job": "aws-node",
+    "instance": "184.73.6.214:9100",
+    "status": "active",
+    "startsAt": "2026-04-13T09:19:49.289Z",
+    "summary": "Fast burn rate critical",
+    "description": "Error budget burning more than 14 times faster than allowed."
+  }
+]
