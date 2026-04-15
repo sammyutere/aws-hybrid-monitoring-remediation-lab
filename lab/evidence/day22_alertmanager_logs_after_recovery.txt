@@ -1,0 +1,53 @@
+alertmanager  | time=2026-04-13T09:39:10.773Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-13T09:39:10.773Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-13T09:39:10.776Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.5 port=9094
+alertmanager  | time=2026-04-13T09:39:10.793Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-13T09:39:10.881Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-13T09:39:10.890Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-13T09:39:10.915Z level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9093
+alertmanager  | time=2026-04-13T09:39:10.916Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9093
+alertmanager  | time=2026-04-13T09:39:12.794Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.000483942s
+alertmanager  | time=2026-04-13T09:39:20.797Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.003728631s
+alertmanager  | time=2026-04-13T16:32:45.744Z level=INFO source=main.go:619 msg="Received SIGTERM, exiting gracefully..."
+alertmanager  | time=2026-04-13T19:04:24.804Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-13T19:04:24.807Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-13T19:04:24.845Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.3 port=9094
+alertmanager  | time=2026-04-13T19:04:24.890Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-13T19:04:25.011Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-13T19:04:26.892Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.0011798s
+alertmanager  | time=2026-04-13T19:04:28.573Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-13T19:04:28.877Z level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9093
+alertmanager  | time=2026-04-13T19:04:28.878Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9093
+alertmanager  | time=2026-04-13T19:04:34.897Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.0061656s
+alertmanager  | time=2026-04-13T19:09:07.695Z level=INFO source=main.go:619 msg="Received SIGTERM, exiting gracefully..."
+alertmanager  | time=2026-04-13T19:45:52.893Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-13T19:45:52.896Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-13T19:45:52.902Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.4 port=9094
+alertmanager  | time=2026-04-13T19:45:52.946Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-13T19:45:53.140Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-13T19:45:53.267Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-13T19:45:53.453Z level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9093
+alertmanager  | time=2026-04-13T19:45:53.453Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9093
+alertmanager  | time=2026-04-13T19:45:54.947Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.000419076s
+alertmanager  | time=2026-04-13T19:46:02.950Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.003312941s
+alertmanager  | time=2026-04-14T21:24:07.534Z level=INFO source=main.go:619 msg="Received SIGTERM, exiting gracefully..."
+alertmanager  | time=2026-04-15T19:06:55.012Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-15T19:06:55.014Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-15T19:06:55.024Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.2 port=9094
+alertmanager  | time=2026-04-15T19:06:55.056Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-15T19:06:55.209Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-15T19:06:55.234Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-15T19:06:55.304Z level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9093
+alertmanager  | time=2026-04-15T19:06:55.305Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9093
+alertmanager  | time=2026-04-15T19:06:57.057Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.00021764s
+alertmanager  | time=2026-04-15T19:07:05.061Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.004235855s
+alertmanager  | time=2026-04-15T19:51:49.298Z level=INFO source=main.go:190 msg="Starting Alertmanager" version="(version=0.30.1, branch=HEAD, revision=0ded3cbb049256f9ebe5c269020a6c883e17b78f)"
+alertmanager  | time=2026-04-15T19:51:49.306Z level=INFO source=main.go:193 msg="Build context" build_context="(go=go1.25.5, platform=linux/amd64, user=root@4d7d922bb2be, date=20260112-23:18:41, tags=netgo)"
+alertmanager  | time=2026-04-15T19:51:49.325Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.19.0.2 port=9094
+alertmanager  | time=2026-04-15T19:51:49.348Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+alertmanager  | time=2026-04-15T19:51:49.485Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-15T19:51:49.498Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/etc/alertmanager/alertmanager.yml
+alertmanager  | time=2026-04-15T19:51:49.807Z level=INFO source=tls_config.go:354 msg="Listening on" address=[::]:9093
+alertmanager  | time=2026-04-15T19:51:49.807Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=[::]:9093
+alertmanager  | time=2026-04-15T19:51:51.349Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.000268099s
+alertmanager  | time=2026-04-15T19:51:59.454Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.105275132s

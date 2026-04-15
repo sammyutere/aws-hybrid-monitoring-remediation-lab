@@ -1,0 +1,23 @@
+=== Day 22 Meta-Monitoring Health Check ===
+
+[1] Docker Compose services
+NAME                COMMAND                  SERVICE             STATUS              PORTS
+alertmanager        "/bin/alertmanager -…"   alertmanager        running             0.0.0.0:9093->9093/tcp
+grafana             "/run.sh"                grafana             running             0.0.0.0:3000->3000/tcp
+prometheus          "/bin/prometheus --c…"   prometheus          running             0.0.0.0:9090->9090/tcp
+test-receiver       "python -u day21_tes…"   test-receiver       running             0.0.0.0:5001->5001/tcp
+
+[2] Prometheus health
+Prometheus Server is Healthy.
+
+[3] Alertmanager health
+OK
+[4] Grafana status code
+302
+
+[5] Test receiver status code
+501
+
+[6] Prometheus target query for aws-node
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"up","instance":"184.73.6.214:9100","job":"aws-node"},"value":[1776281548.945,"1"]}]}}
+=== End of health check ===

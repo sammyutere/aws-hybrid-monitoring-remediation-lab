@@ -1,0 +1,5 @@
+NAME                COMMAND                  SERVICE             STATUS              PORTS
+alertmanager        "/bin/alertmanager -…"   alertmanager        running             0.0.0.0:9093->9093/tcp
+grafana             "/run.sh"                grafana             running             0.0.0.0:3000->3000/tcp
+prometheus          "/bin/prometheus --c…"   prometheus          running             0.0.0.0:9090->9090/tcp
+test-receiver       "python -u day21_tes…"   test-receiver       running             0.0.0.0:5001->5001/tcp
