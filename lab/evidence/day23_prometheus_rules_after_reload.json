@@ -1,0 +1,418 @@
+{
+  "status": "success",
+  "data": {
+    "groups": [
+      {
+        "name": "node-basic",
+        "file": "/etc/prometheus/rules/alert_rules.yml",
+        "rules": [
+          {
+            "state": "unknown",
+            "name": "NodeExporterDown",
+            "query": "up{job=\"aws-node\"} == 0",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "page"
+            },
+            "annotations": {
+              "description": "Prometheus cannot scrape node_exporter for 2m. Check reachability, SG my_ip/32, exporter process, and instance health.",
+              "summary": "Node exporter down on {{ $labels.instance }}"
+            },
+            "alerts": [],
+            "health": "unknown",
+            "evaluationTime": 0,
+            "lastEvaluation": "0001-01-01T00:00:00Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0,
+        "lastEvaluation": "0001-01-01T00:00:00Z"
+      },
+      {
+        "name": "node-warning",
+        "file": "/etc/prometheus/rules/alert_rules.yml",
+        "rules": [
+          {
+            "state": "inactive",
+            "name": "HighMemoryUsage",
+            "query": "(node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) < 0.2",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "ticket"
+            },
+            "annotations": {
+              "description": "Available memory below 20% for 2 minutes.",
+              "summary": "Memory usage high on {{ $labels.instance }}"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.016336919,
+            "lastEvaluation": "2026-04-18T18:43:22.304383674Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.016591403,
+        "lastEvaluation": "2026-04-18T18:43:22.304162571Z"
+      },
+      {
+        "name": "day16-slo-rules",
+        "file": "/etc/prometheus/rules/day16-slo-rules.yml",
+        "rules": [
+          {
+            "name": "job:aws_node:up:ratio_5m",
+            "query": "avg_over_time(up{job=\"aws-node\"}[5m])",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000610901,
+            "lastEvaluation": "2026-04-18T18:43:51.788339709Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:aws_node:up:ratio_1h",
+            "query": "avg_over_time(up{job=\"aws-node\"}[1h])",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000176181,
+            "lastEvaluation": "2026-04-18T18:43:51.788965716Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:aws_node:up:ratio_24h",
+            "query": "avg_over_time(up{job=\"aws-node\"}[1d])",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000337193,
+            "lastEvaluation": "2026-04-18T18:43:51.789151889Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:aws_node:error_budget_remaining_24h",
+            "query": "(job:aws_node:up:ratio_24h - 0.99) / (1 - 0.99)",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000232117,
+            "lastEvaluation": "2026-04-18T18:43:51.78949935Z",
+            "type": "recording"
+          },
+          {
+            "state": "pending",
+            "name": "AwsNodeSLOBreaching",
+            "query": "job:aws_node:up:ratio_24h < 0.99",
+            "duration": 300,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "ticket"
+            },
+            "annotations": {
+              "description": "24h availability below 99%.",
+              "summary": "aws-node SLO breach detected"
+            },
+            "alerts": [
+              {
+                "labels": {
+                  "alertname": "AwsNodeSLOBreaching",
+                  "instance": "184.73.6.214:9100",
+                  "job": "aws-node",
+                  "severity": "ticket"
+                },
+                "annotations": {
+                  "description": "24h availability below 99%.",
+                  "summary": "aws-node SLO breach detected"
+                },
+                "state": "pending",
+                "activeAt": "2026-04-18T18:43:51.807411735Z",
+                "value": "0e+00"
+              }
+            ],
+            "health": "ok",
+            "evaluationTime": 0.00036951,
+            "lastEvaluation": "2026-04-18T18:43:51.789741673Z",
+            "type": "alerting"
+          },
+          {
+            "state": "pending",
+            "name": "AwsNodeFastBurn",
+            "query": "job:aws_node:up:ratio_1h < 0.95",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "page"
+            },
+            "annotations": {
+              "description": "1h availability below 95%.",
+              "summary": "aws-node fast error budget burn"
+            },
+            "alerts": [
+              {
+                "labels": {
+                  "alertname": "AwsNodeFastBurn",
+                  "instance": "184.73.6.214:9100",
+                  "job": "aws-node",
+                  "severity": "page"
+                },
+                "annotations": {
+                  "description": "1h availability below 95%.",
+                  "summary": "aws-node fast error budget burn"
+                },
+                "state": "pending",
+                "activeAt": "2026-04-18T18:43:51.807411735Z",
+                "value": "0e+00"
+              }
+            ],
+            "health": "ok",
+            "evaluationTime": 0.000220771,
+            "lastEvaluation": "2026-04-18T18:43:51.79012064Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.002053699,
+        "lastEvaluation": "2026-04-18T18:43:51.788291596Z"
+      },
+      {
+        "name": "day17-burn-rate",
+        "file": "/etc/prometheus/rules/day17-burn-rate-rules.yml",
+        "rules": [
+          {
+            "name": "job:aws_node:error_rate_5m",
+            "query": "1 - job:aws_node:up:ratio_5m",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000948374,
+            "lastEvaluation": "2026-04-18T18:43:49.272169522Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:aws_node:error_rate_1h",
+            "query": "1 - job:aws_node:up:ratio_1h",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000168758,
+            "lastEvaluation": "2026-04-18T18:43:49.273136255Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:aws_node:burn_rate_5m",
+            "query": "job:aws_node:error_rate_5m / 0.01",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000127477,
+            "lastEvaluation": "2026-04-18T18:43:49.273315387Z",
+            "type": "recording"
+          },
+          {
+            "name": "job:aws_node:burn_rate_1h",
+            "query": "job:aws_node:error_rate_1h / 0.01",
+            "labels": {},
+            "health": "ok",
+            "evaluationTime": 0.000134039,
+            "lastEvaluation": "2026-04-18T18:43:49.273452272Z",
+            "type": "recording"
+          },
+          {
+            "state": "pending",
+            "name": "AwsNodeFastBurnCritical",
+            "query": "job:aws_node:burn_rate_5m > 14",
+            "duration": 60,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "critical"
+            },
+            "annotations": {
+              "description": "Error budget burning more than 14 times faster than allowed.",
+              "summary": "Fast burn rate critical"
+            },
+            "alerts": [
+              {
+                "labels": {
+                  "alertname": "AwsNodeFastBurnCritical",
+                  "instance": "184.73.6.214:9100",
+                  "job": "aws-node",
+                  "severity": "critical"
+                },
+                "annotations": {
+                  "description": "Error budget burning more than 14 times faster than allowed.",
+                  "summary": "Fast burn rate critical"
+                },
+                "state": "pending",
+                "activeAt": "2026-04-18T18:43:49.289296405Z",
+                "value": "1e+02"
+              }
+            ],
+            "health": "ok",
+            "evaluationTime": 0.00036277,
+            "lastEvaluation": "2026-04-18T18:43:49.273596207Z",
+            "type": "alerting"
+          },
+          {
+            "state": "pending",
+            "name": "AwsNodeBurnRateHigh",
+            "query": "job:aws_node:burn_rate_1h > 6",
+            "duration": 300,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "page"
+            },
+            "annotations": {
+              "description": "Error budget consumption is elevated.",
+              "summary": "High burn rate detected"
+            },
+            "alerts": [
+              {
+                "labels": {
+                  "alertname": "AwsNodeBurnRateHigh",
+                  "instance": "184.73.6.214:9100",
+                  "job": "aws-node",
+                  "severity": "page"
+                },
+                "annotations": {
+                  "description": "Error budget consumption is elevated.",
+                  "summary": "High burn rate detected"
+                },
+                "state": "pending",
+                "activeAt": "2026-04-18T18:43:49.289296405Z",
+                "value": "1e+02"
+              }
+            ],
+            "health": "ok",
+            "evaluationTime": 0.000285105,
+            "lastEvaluation": "2026-04-18T18:43:49.273970963Z",
+            "type": "alerting"
+          },
+          {
+            "state": "pending",
+            "name": "AwsNodeBurnRateSlow",
+            "query": "job:aws_node:burn_rate_1h > 3",
+            "duration": 600,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "ticket"
+            },
+            "annotations": {
+              "description": "Error budget is being consumed gradually.",
+              "summary": "Slow burn rate detected"
+            },
+            "alerts": [
+              {
+                "labels": {
+                  "alertname": "AwsNodeBurnRateSlow",
+                  "instance": "184.73.6.214:9100",
+                  "job": "aws-node",
+                  "severity": "ticket"
+                },
+                "annotations": {
+                  "description": "Error budget is being consumed gradually.",
+                  "summary": "Slow burn rate detected"
+                },
+                "state": "pending",
+                "activeAt": "2026-04-18T18:43:49.289296405Z",
+                "value": "1e+02"
+              }
+            ],
+            "health": "ok",
+            "evaluationTime": 0.000239848,
+            "lastEvaluation": "2026-04-18T18:43:49.274266174Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.002403612,
+        "lastEvaluation": "2026-04-18T18:43:49.272106286Z"
+      },
+      {
+        "name": "day23-meta-monitoring",
+        "file": "/etc/prometheus/rules/day23-meta-monitoring-rules.yml",
+        "rules": [
+          {
+            "state": "inactive",
+            "name": "MetaPrometheusDown",
+            "query": "meta_prometheus_up == 0",
+            "duration": 60,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "critical"
+            },
+            "annotations": {
+              "description": "Prometheus local health endpoint is not reachable from the meta-monitoring exporter.",
+              "summary": "Prometheus meta-health check failed"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000416698,
+            "lastEvaluation": "2026-04-18T18:43:49.397829981Z",
+            "type": "alerting"
+          },
+          {
+            "state": "inactive",
+            "name": "MetaAlertmanagerDown",
+            "query": "meta_alertmanager_up == 0",
+            "duration": 60,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "page"
+            },
+            "annotations": {
+              "description": "Alertmanager local health endpoint is not reachable from the meta-monitoring exporter.",
+              "summary": "Alertmanager meta-health check failed"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000076875,
+            "lastEvaluation": "2026-04-18T18:43:49.3982813Z",
+            "type": "alerting"
+          },
+          {
+            "state": "inactive",
+            "name": "MetaGrafanaDown",
+            "query": "meta_grafana_up == 0",
+            "duration": 120,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "ticket"
+            },
+            "annotations": {
+              "description": "Grafana is not reachable from the meta-monitoring exporter.",
+              "summary": "Grafana meta-health check failed"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000103594,
+            "lastEvaluation": "2026-04-18T18:43:49.398374106Z",
+            "type": "alerting"
+          },
+          {
+            "state": "inactive",
+            "name": "MetaTestReceiverDown",
+            "query": "meta_test_receiver_up == 0",
+            "duration": 60,
+            "keepFiringFor": 0,
+            "labels": {
+              "severity": "ticket"
+            },
+            "annotations": {
+              "description": "The containerized test receiver is not reachable from the meta-monitoring exporter.",
+              "summary": "Test receiver meta-health check failed"
+            },
+            "alerts": [],
+            "health": "ok",
+            "evaluationTime": 0.000088429,
+            "lastEvaluation": "2026-04-18T18:43:49.398483093Z",
+            "type": "alerting"
+          }
+        ],
+        "interval": 60,
+        "limit": 0,
+        "evaluationTime": 0.000825139,
+        "lastEvaluation": "2026-04-18T18:43:49.397752934Z"
+      }
+    ]
+  }
+}

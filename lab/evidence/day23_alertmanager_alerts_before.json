@@ -1,0 +1,174 @@
+[
+  {
+    "annotations": {
+      "description": "1h availability below 95%.",
+      "summary": "aws-node fast error budget burn"
+    },
+    "endsAt": "2026-04-16T19:37:51.807Z",
+    "fingerprint": "0163dc8ebf78af06",
+    "receivers": [
+      {
+        "name": "page-receiver"
+      }
+    ],
+    "startsAt": "2026-04-16T18:43:51.807Z",
+    "status": {
+      "inhibitedBy": [],
+      "mutedBy": [],
+      "silencedBy": [],
+      "state": "active"
+    },
+    "updatedAt": "2026-04-16T19:34:31.198Z",
+    "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aup%3Aratio_1h+%3C+0.95&g0.tab=1",
+    "labels": {
+      "alertname": "AwsNodeFastBurn",
+      "instance": "184.73.6.214:9100",
+      "job": "aws-node",
+      "severity": "page"
+    }
+  },
+  {
+    "annotations": {
+      "description": "Error budget consumption is elevated.",
+      "summary": "High burn rate detected"
+    },
+    "endsAt": "2026-04-16T19:37:49.289Z",
+    "fingerprint": "10ecdb0ba7c63fd2",
+    "receivers": [
+      {
+        "name": "page-receiver"
+      }
+    ],
+    "startsAt": "2026-04-16T18:49:49.289Z",
+    "status": {
+      "inhibitedBy": [],
+      "mutedBy": [],
+      "silencedBy": [],
+      "state": "active"
+    },
+    "updatedAt": "2026-04-16T19:34:28.682Z",
+    "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aburn_rate_1h+%3E+6&g0.tab=1",
+    "labels": {
+      "alertname": "AwsNodeBurnRateHigh",
+      "instance": "184.73.6.214:9100",
+      "job": "aws-node",
+      "severity": "page"
+    }
+  },
+  {
+    "annotations": {
+      "description": "24h availability below 99%.",
+      "summary": "aws-node SLO breach detected"
+    },
+    "endsAt": "2026-04-16T19:37:51.807Z",
+    "fingerprint": "2d9c7d6b941ad4ab",
+    "receivers": [
+      {
+        "name": "ticket-receiver"
+      }
+    ],
+    "startsAt": "2026-04-16T13:35:51.807Z",
+    "status": {
+      "inhibitedBy": [
+        "49a6fb76b2c74fa9"
+      ],
+      "mutedBy": [],
+      "silencedBy": [],
+      "state": "suppressed"
+    },
+    "updatedAt": "2026-04-16T19:34:31.197Z",
+    "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aup%3Aratio_24h+%3C+0.99&g0.tab=1",
+    "labels": {
+      "alertname": "AwsNodeSLOBreaching",
+      "instance": "184.73.6.214:9100",
+      "job": "aws-node",
+      "severity": "ticket"
+    }
+  },
+  {
+    "annotations": {
+      "description": "Prometheus cannot scrape node_exporter for 2m. Check reachability, SG my_ip/32, exporter process, and instance health.",
+      "summary": "Node exporter down on 184.73.6.214:9100"
+    },
+    "endsAt": "2026-04-16T19:37:59.264Z",
+    "fingerprint": "49a6fb76b2c74fa9",
+    "receivers": [
+      {
+        "name": "page-receiver"
+      }
+    ],
+    "startsAt": "2026-04-16T18:45:59.264Z",
+    "status": {
+      "inhibitedBy": [],
+      "mutedBy": [],
+      "silencedBy": [],
+      "state": "active"
+    },
+    "updatedAt": "2026-04-16T19:34:38.635Z",
+    "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=up%7Bjob%3D%22aws-node%22%7D+%3D%3D+0&g0.tab=1",
+    "labels": {
+      "alertname": "NodeExporterDown",
+      "instance": "184.73.6.214:9100",
+      "job": "aws-node",
+      "severity": "page"
+    }
+  },
+  {
+    "annotations": {
+      "description": "Error budget is being consumed gradually.",
+      "summary": "Slow burn rate detected"
+    },
+    "endsAt": "2026-04-16T19:38:49.289Z",
+    "fingerprint": "d9c4e89546d5b300",
+    "receivers": [
+      {
+        "name": "ticket-receiver"
+      }
+    ],
+    "startsAt": "2026-04-16T18:54:49.289Z",
+    "status": {
+      "inhibitedBy": [
+        "49a6fb76b2c74fa9"
+      ],
+      "mutedBy": [],
+      "silencedBy": [],
+      "state": "suppressed"
+    },
+    "updatedAt": "2026-04-16T19:35:28.639Z",
+    "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aburn_rate_1h+%3E+3&g0.tab=1",
+    "labels": {
+      "alertname": "AwsNodeBurnRateSlow",
+      "instance": "184.73.6.214:9100",
+      "job": "aws-node",
+      "severity": "ticket"
+    }
+  },
+  {
+    "annotations": {
+      "description": "Error budget burning more than 14 times faster than allowed.",
+      "summary": "Fast burn rate critical"
+    },
+    "endsAt": "2026-04-16T19:37:49.289Z",
+    "fingerprint": "f7904b097394c9b3",
+    "receivers": [
+      {
+        "name": "critical-receiver"
+      }
+    ],
+    "startsAt": "2026-04-16T18:45:49.289Z",
+    "status": {
+      "inhibitedBy": [],
+      "mutedBy": [],
+      "silencedBy": [],
+      "state": "active"
+    },
+    "updatedAt": "2026-04-16T19:34:28.680Z",
+    "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aburn_rate_5m+%3E+14&g0.tab=1",
+    "labels": {
+      "alertname": "AwsNodeFastBurnCritical",
+      "instance": "184.73.6.214:9100",
+      "job": "aws-node",
+      "severity": "critical"
+    }
+  }
+]

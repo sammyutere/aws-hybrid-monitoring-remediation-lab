@@ -1,0 +1,38 @@
+groups:
+  - name: day23-meta-monitoring
+    rules:
+      - alert: MetaPrometheusDown
+        expr: meta_prometheus_up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Prometheus meta-health check failed"
+          description: "Prometheus local health endpoint is not reachable from the meta-monitoring exporter."
+
+      - alert: MetaAlertmanagerDown
+        expr: meta_alertmanager_up == 0
+        for: 1m
+        labels:
+          severity: page
+        annotations:
+          summary: "Alertmanager meta-health check failed"
+          description: "Alertmanager local health endpoint is not reachable from the meta-monitoring exporter."
+
+      - alert: MetaGrafanaDown
+        expr: meta_grafana_up == 0
+        for: 2m
+        labels:
+          severity: ticket
+        annotations:
+          summary: "Grafana meta-health check failed"
+          description: "Grafana is not reachable from the meta-monitoring exporter."
+
+      - alert: MetaTestReceiverDown
+        expr: meta_test_receiver_up == 0
+        for: 1m
+        labels:
+          severity: ticket
+        annotations:
+          summary: "Test receiver meta-health check failed"
+          description: "The containerized test receiver is not reachable from the meta-monitoring exporter."
