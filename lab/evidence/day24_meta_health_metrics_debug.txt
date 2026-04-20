@@ -1,0 +1,12 @@
+# HELP meta_prometheus_up Prometheus local health
+# TYPE meta_prometheus_up gauge
+meta_prometheus_up 1
+# HELP meta_alertmanager_up Alertmanager local health
+# TYPE meta_alertmanager_up gauge
+meta_alertmanager_up 1
+# HELP meta_grafana_up Grafana local health
+# TYPE meta_grafana_up gauge
+meta_grafana_up 1
+# HELP meta_test_receiver_up Test receiver local health
+# TYPE meta_test_receiver_up gauge
+meta_test_receiver_up 1

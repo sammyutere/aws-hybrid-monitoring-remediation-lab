@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "data": {
+    "activeTargets": [
+      {
+        "discoveredLabels": {
+          "__address__": "184.73.6.214:9100",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "15s",
+          "__scrape_timeout__": "10s",
+          "job": "aws-node"
+        },
+        "labels": {
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node"
+        },
+        "scrapePool": "aws-node",
+        "scrapeUrl": "http://184.73.6.214:9100/metrics",
+        "globalUrl": "http://184.73.6.214:9100/metrics",
+        "lastError": "Get \"http://184.73.6.214:9100/metrics\": context deadline exceeded",
+        "lastScrape": "2026-04-20T18:02:05.633179929Z",
+        "lastScrapeDuration": 10.004295559,
+        "health": "down",
+        "scrapeInterval": "15s",
+        "scrapeTimeout": "10s"
+      },
+      {
+        "discoveredLabels": {
+          "__address__": "host.docker.internal:9911",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "15s",
+          "__scrape_timeout__": "10s",
+          "job": "meta-monitoring"
+        },
+        "labels": {
+          "instance": "host.docker.internal:9911",
+          "job": "meta-monitoring"
+        },
+        "scrapePool": "meta-monitoring",
+        "scrapeUrl": "http://host.docker.internal:9911/metrics",
+        "globalUrl": "http://host.docker.internal:9911/metrics",
+        "lastError": "",
+        "lastScrape": "2026-04-20T18:02:24.685852623Z",
+        "lastScrapeDuration": 0.065022175,
+        "health": "up",
+        "scrapeInterval": "15s",
+        "scrapeTimeout": "10s"
+      }
+    ],
+    "droppedTargets": [],
+    "droppedTargetCounts": {
+      "aws-node": 0,
+      "meta-monitoring": 0
+    }
+  }
+}

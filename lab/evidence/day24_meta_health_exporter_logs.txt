@@ -1,0 +1,5 @@
+meta-health-exporter  | Listening on port 9911
+meta-health-exporter  | 172.19.0.1 - - [20/Apr/2026 17:58:54] "GET /metrics HTTP/1.1" 200 -
+meta-health-exporter  | 172.19.0.1 - - [20/Apr/2026 17:59:09] "GET /metrics HTTP/1.1" 200 -
+meta-health-exporter  | 172.19.0.1 - - [20/Apr/2026 17:59:24] "GET /metrics HTTP/1.1" 200 -
+meta-health-exporter  | 172.19.0.1 - - [20/Apr/2026 17:59:39] "GET /metrics HTTP/1.1" 200 -
