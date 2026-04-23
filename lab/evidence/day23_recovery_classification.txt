@@ -1,0 +1,26 @@
+Recovery classification (Day 23):
+
+Operational health:
+- up{job="aws-node"} confirms current reachability
+
+Statistical recovery:
+- job:aws_node:up:ratio_5m shows recent availability window
+- job:aws_node:burn_rate_5m shows recent error budget consumption
+
+Alert interpretation:
+- Active alerts after recovery may reflect historical downtime within evaluation windows
+- Not all alerts are expected to clear immediately after service restoration
+
+Interpretation guide:
+- up = 1 → service is operationally healthy
+- ratio_5m < 1 → recent downtime still affects alert logic
+- burn_rate_5m > 0 → recent errors still impacting SLO calculations
+- long-window alerts (1h / 24h) may remain firing even after recovery
+
+Key insight:
+Prometheus alerts are time-window based, not instantaneous.
+
+A recovered service can still produce active alerts if the evaluation window
+includes earlier downtime.
+
+This is expected behavior, not a failure of the recovery process.

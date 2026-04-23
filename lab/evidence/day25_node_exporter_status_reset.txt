@@ -1,0 +1,6 @@
+● node_exporter.service - Prometheus Node Exporter
+   Loaded: loaded (/etc/systemd/system/node_exporter.service; enabled; vendor preset: disabled)
+   Active: active (running) since Mon 2026-04-13 09:51:39 UTC; 1 weeks 2 days ago
+ Main PID: 10707 (node_exporter)
+   CGroup: /system.slice/node_exporter.service
+           └─10707 /usr/local/bin/node_exporter

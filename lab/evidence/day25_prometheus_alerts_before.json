@@ -1,0 +1,97 @@
+{
+  "status": "success",
+  "data": {
+    "alerts": [
+      {
+        "labels": {
+          "alertname": "AwsNodeFastBurnCritical",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "critical"
+        },
+        "annotations": {
+          "description": "Error budget burning more than 14 times faster than allowed.",
+          "summary": "Fast burn rate critical"
+        },
+        "state": "firing",
+        "activeAt": "2026-04-21T12:29:49.289296405Z",
+        "value": "1e+02"
+      },
+      {
+        "labels": {
+          "alertname": "AwsNodeBurnRateHigh",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "page"
+        },
+        "annotations": {
+          "description": "Error budget consumption is elevated.",
+          "summary": "High burn rate detected"
+        },
+        "state": "firing",
+        "activeAt": "2026-04-21T12:28:49.289296405Z",
+        "value": "1e+02"
+      },
+      {
+        "labels": {
+          "alertname": "AwsNodeBurnRateSlow",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "ticket"
+        },
+        "annotations": {
+          "description": "Error budget is being consumed gradually.",
+          "summary": "Slow burn rate detected"
+        },
+        "state": "firing",
+        "activeAt": "2026-04-21T12:28:49.289296405Z",
+        "value": "1e+02"
+      },
+      {
+        "labels": {
+          "alertname": "NodeExporterDown",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "page"
+        },
+        "annotations": {
+          "description": "Prometheus cannot scrape node_exporter for 2m. Check reachability, SG my_ip/32, exporter process, and instance health.",
+          "summary": "Node exporter down on 184.73.6.214:9100"
+        },
+        "state": "firing",
+        "activeAt": "2026-04-21T12:27:59.264202733Z",
+        "value": "0e+00"
+      },
+      {
+        "labels": {
+          "alertname": "AwsNodeSLOBreaching",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "ticket"
+        },
+        "annotations": {
+          "description": "24h availability below 99%.",
+          "summary": "aws-node SLO breach detected"
+        },
+        "state": "firing",
+        "activeAt": "2026-04-21T12:27:51.807411735Z",
+        "value": "0e+00"
+      },
+      {
+        "labels": {
+          "alertname": "AwsNodeFastBurn",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "page"
+        },
+        "annotations": {
+          "description": "1h availability below 95%.",
+          "summary": "aws-node fast error budget burn"
+        },
+        "state": "firing",
+        "activeAt": "2026-04-21T12:27:51.807411735Z",
+        "value": "0e+00"
+      }
+    ]
+  }
+}
