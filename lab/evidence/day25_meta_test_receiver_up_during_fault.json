@@ -5,13 +5,13 @@
     "result": [
       {
         "metric": {
-          "__name__": "meta_prometheus_up",
+          "__name__": "meta_test_receiver_up",
           "instance": "meta-health-exporter:9911",
           "job": "meta-monitoring"
         },
         "value": [
-          1776972943.929,
-          "1"
+          1776978945.306,
+          "0"
         ]
       }
     ]

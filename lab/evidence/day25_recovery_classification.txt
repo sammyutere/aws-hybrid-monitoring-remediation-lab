@@ -1,0 +1,29 @@
+Recovery classification (Day 25):
+
+Operational health:
+- up=1 confirms service is currently reachable
+
+Statistical recovery:
+- ratio_5m shows recent availability window
+- burn_rate_5m shows recent error impact
+
+Alert interpretation:
+- Long-window alerts (1h/24h) may remain firing
+- This reflects historical downtime, not current failure
+
+Interpretation guide:
+- up = 1 → system is healthy now
+- ratio_5m < 1 → still recovering
+- burn_rate_5m > 0 → recent errors exist
+- SLO alerts may persist → expected behavior
+
+Key insight:
+Alerts are time-window based, not instantaneous.
+
+A recovered system can still have active alerts if historical data
+within the evaluation window indicates prior failure.
+
+After recovery:
+- meta_test_receiver_up should return to 1
+- short-window alerts should clear
+- long-window SLO alerts may remain firing

@@ -1,0 +1,3 @@
+/etc/grafana/dashboards:
+day18-slo-dashboard.json
+day25-meta-monitoring-dashboard.json
