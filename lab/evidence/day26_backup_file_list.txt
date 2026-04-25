@@ -1,0 +1,12 @@
+backups/day26-monitoring-stack/alertmanager/alertmanager.yml
+backups/day26-monitoring-stack/alertmanager/templates/day21-notification.tmpl
+backups/day26-monitoring-stack/docker-compose.yml
+backups/day26-monitoring-stack/grafana/dashboards/day18-slo-dashboard.json
+backups/day26-monitoring-stack/grafana/dashboards/day25-meta-monitoring-dashboard.json
+backups/day26-monitoring-stack/grafana/provisioning/dashboards/dashboards.yml
+backups/day26-monitoring-stack/grafana/provisioning/datasources/prometheus.yml
+backups/day26-monitoring-stack/prometheus/prometheus.yml
+backups/day26-monitoring-stack/prometheus/rules/alert_rules.yml
+backups/day26-monitoring-stack/prometheus/rules/day16-slo-rules.yml
+backups/day26-monitoring-stack/prometheus/rules/day17-burn-rate-rules.yml
+backups/day26-monitoring-stack/prometheus/rules/day23-meta-monitoring-rules.yml

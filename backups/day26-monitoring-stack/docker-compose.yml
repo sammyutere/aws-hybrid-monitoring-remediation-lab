@@ -1,0 +1,53 @@
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus/rules:/etc/prometheus/rules:ro
+    restart: unless-stopped
+
+  alertmanager:
+    image: prom/alertmanager
+    container_name: alertmanager
+    ports:
+      - "9093:9093"
+    volumes:
+      - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+      - ./alertmanager/templates:/etc/alertmanager/templates:ro
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../grafana/provisioning:/etc/grafana/provisioning:ro
+      - ../grafana/dashboards:/etc/grafana/dashboards:ro
+      - grafana-storage:/var/lib/grafana
+    restart: unless-stopped
+
+  test-receiver:
+    image: python:3.11-slim
+    container_name: test-receiver
+    working_dir: /app
+    command: python -u day21_test_receiver.py
+    ports:
+      - "5001:5001"
+    volumes:
+      - ../tools:/app:ro
+    restart: unless-stopped
+
+  meta-health-exporter:
+    build:
+      context: ./meta-health-exporter
+    container_name: meta-health-exporter
+    ports:
+      - "9911:9911"
+    restart: unless-stopped
+
+volumes:
+  grafana-storage:

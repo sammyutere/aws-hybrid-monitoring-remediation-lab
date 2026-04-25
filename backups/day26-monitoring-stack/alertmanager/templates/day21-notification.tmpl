@@ -1,0 +1,31 @@
+{{ define "day21.default.title" -}}
+[{{ .Status | toUpper }}] {{ .CommonLabels.alertname }} (severity={{ .CommonLabels.severity }})
+{{- end }}
+
+{{ define "day21.default.body" -}}
+Alert Summary
+-------------
+Status: {{ .Status }}
+Alertname: {{ .CommonLabels.alertname }}
+Severity: {{ .CommonLabels.severity }}
+Job: {{ .CommonLabels.job }}
+Instance: {{ .CommonLabels.instance }}
+
+{{- if .CommonAnnotations.summary }}
+Summary: {{ .CommonAnnotations.summary }}
+{{- end }}
+
+{{- if .CommonAnnotations.description }}
+Description: {{ .CommonAnnotations.description }}
+{{- end }}
+
+Starts At:
+{{- range .Alerts }}
+- {{ .StartsAt }}
+{{- end }}
+
+Labels:
+{{- range $k, $v := .CommonLabels }}
+- {{ $k }}={{ $v }}
+{{- end }}
+{{- end }}

@@ -1,0 +1,12 @@
+Checking /etc/prometheus/rules/alert_rules.yml
+  SUCCESS: 2 rules found
+
+Checking /etc/prometheus/rules/day16-slo-rules.yml
+  SUCCESS: 6 rules found
+
+Checking /etc/prometheus/rules/day17-burn-rate-rules.yml
+  SUCCESS: 7 rules found
+
+Checking /etc/prometheus/rules/day23-meta-monitoring-rules.yml
+  SUCCESS: 4 rules found
+
