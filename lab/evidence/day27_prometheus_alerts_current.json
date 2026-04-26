@@ -4,21 +4,6 @@
     "alerts": [
       {
         "labels": {
-          "alertname": "NodeExporterDown",
-          "instance": "184.73.6.214:9100",
-          "job": "aws-node",
-          "severity": "page"
-        },
-        "annotations": {
-          "description": "Prometheus cannot scrape node_exporter for 2m. Check reachability, SG my_ip/32, exporter process, and instance health.",
-          "summary": "Node exporter down on 184.73.6.214:9100"
-        },
-        "state": "firing",
-        "activeAt": "2026-04-26T15:15:59.264202733Z",
-        "value": "0e+00"
-      },
-      {
-        "labels": {
           "alertname": "AwsNodeSLOBreaching",
           "instance": "184.73.6.214:9100",
           "job": "aws-node",
@@ -30,7 +15,7 @@
         },
         "state": "firing",
         "activeAt": "2026-04-25T09:13:51.807411735Z",
-        "value": "1.6019417475728157e-01"
+        "value": "1.2566844919786097e-01"
       },
       {
         "labels": {
@@ -45,7 +30,7 @@
         },
         "state": "firing",
         "activeAt": "2026-04-26T15:15:51.807411735Z",
-        "value": "0e+00"
+        "value": "5.8333333333333334e-02"
       },
       {
         "labels": {
@@ -60,7 +45,7 @@
         },
         "state": "firing",
         "activeAt": "2026-04-26T15:16:49.289296405Z",
-        "value": "1e+02"
+        "value": "5e+01"
       },
       {
         "labels": {
@@ -75,7 +60,7 @@
         },
         "state": "firing",
         "activeAt": "2026-04-26T15:16:49.289296405Z",
-        "value": "1e+02"
+        "value": "9.583333333333333e+01"
       },
       {
         "labels": {
@@ -90,7 +75,7 @@
         },
         "state": "firing",
         "activeAt": "2026-04-26T15:16:49.289296405Z",
-        "value": "1e+02"
+        "value": "9.583333333333333e+01"
       }
     ]
   }

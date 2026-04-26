@@ -1,0 +1,66 @@
+=== Day 28 Automated Restore Validation ===
+[1] Checking backup archive exists
+[2] Checking checksum file exists
+[3] Verifying backup checksum
+backups/day26-monitoring-stack.tar.gz: OK
+[4] Preparing clean restore directory
+[5] Extracting backup archive
+[6] Listing restored files
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/alertmanager/alertmanager.yml
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/alertmanager/templates/day21-notification.tmpl
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/docker-compose.yml
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/grafana/dashboards/day18-slo-dashboard.json
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/grafana/dashboards/day25-meta-monitoring-dashboard.json
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/grafana/provisioning/dashboards/dashboards.yml
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/grafana/provisioning/datasources/prometheus.yml
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/prometheus/prometheus.yml
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/prometheus/rules/alert_rules.yml
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/prometheus/rules/day16-slo-rules.yml
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/prometheus/rules/day17-burn-rate-rules.yml
+/tmp/day28-monitoring-restore-test/backups/day26-monitoring-stack/prometheus/rules/day23-meta-monitoring-rules.yml
+[7] Validating restored required files
+[8] Validating restored Docker Compose config
+[9] Comparing restored config with live config
+[10] Validating running Prometheus config
+Checking /etc/prometheus/prometheus.yml
+  SUCCESS: 4 rule files found
+ SUCCESS: /etc/prometheus/prometheus.yml is valid prometheus config file syntax
+
+Checking /etc/prometheus/rules/alert_rules.yml
+  SUCCESS: 2 rules found
+
+Checking /etc/prometheus/rules/day16-slo-rules.yml
+  SUCCESS: 6 rules found
+
+Checking /etc/prometheus/rules/day17-burn-rate-rules.yml
+  SUCCESS: 7 rules found
+
+Checking /etc/prometheus/rules/day23-meta-monitoring-rules.yml
+  SUCCESS: 4 rules found
+
+[11] Validating running Prometheus rules
+Checking /etc/prometheus/rules/alert_rules.yml
+  SUCCESS: 2 rules found
+
+Checking /etc/prometheus/rules/day16-slo-rules.yml
+  SUCCESS: 6 rules found
+
+Checking /etc/prometheus/rules/day17-burn-rate-rules.yml
+  SUCCESS: 7 rules found
+
+Checking /etc/prometheus/rules/day23-meta-monitoring-rules.yml
+  SUCCESS: 4 rules found
+
+[12] Checking monitoring stack services
+NAME                   COMMAND                  SERVICE                STATUS              PORTS
+alertmanager           "/bin/alertmanager -…"   alertmanager           running             0.0.0.0:9093->9093/tcp
+grafana                "/run.sh"                grafana                running             0.0.0.0:3000->3000/tcp
+meta-health-exporter   "python -u /app/app.…"   meta-health-exporter   running             0.0.0.0:9911->9911/tcp
+prometheus             "/bin/prometheus --c…"   prometheus             running             0.0.0.0:9090->9090/tcp
+test-receiver          "python -u day21_tes…"   test-receiver          running             0.0.0.0:5001->5001/tcp
+[13] Checking meta-health metrics
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_prometheus_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777220791.200,"1"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_alertmanager_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777220791.218,"1"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_grafana_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777220791.236,"1"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_test_receiver_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777220791.252,"1"]}]}}
+=== Day 28 restore validation complete ===
