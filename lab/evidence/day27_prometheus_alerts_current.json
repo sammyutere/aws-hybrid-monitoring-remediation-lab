@@ -15,7 +15,7 @@
         },
         "state": "firing",
         "activeAt": "2026-04-25T09:13:51.807411735Z",
-        "value": "1.2566844919786097e-01"
+        "value": "3.650485436893204e-01"
       },
       {
         "labels": {
@@ -30,22 +30,7 @@
         },
         "state": "firing",
         "activeAt": "2026-04-26T15:15:51.807411735Z",
-        "value": "5.8333333333333334e-02"
-      },
-      {
-        "labels": {
-          "alertname": "AwsNodeFastBurnCritical",
-          "instance": "184.73.6.214:9100",
-          "job": "aws-node",
-          "severity": "critical"
-        },
-        "annotations": {
-          "description": "Error budget burning more than 14 times faster than allowed.",
-          "summary": "Fast burn rate critical"
-        },
-        "state": "firing",
-        "activeAt": "2026-04-26T15:16:49.289296405Z",
-        "value": "5e+01"
+        "value": "6.431535269709544e-01"
       },
       {
         "labels": {
@@ -60,7 +45,7 @@
         },
         "state": "firing",
         "activeAt": "2026-04-26T15:16:49.289296405Z",
-        "value": "9.583333333333333e+01"
+        "value": "3.7344398340248965e+01"
       },
       {
         "labels": {
@@ -75,7 +60,7 @@
         },
         "state": "firing",
         "activeAt": "2026-04-26T15:16:49.289296405Z",
-        "value": "9.583333333333333e+01"
+        "value": "3.7344398340248965e+01"
       }
     ]
   }
