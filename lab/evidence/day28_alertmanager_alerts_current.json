@@ -4,7 +4,7 @@
       "description": "1h availability below 95%.",
       "summary": "aws-node fast error budget burn"
     },
-    "endsAt": "2026-04-26T16:56:51.807Z",
+    "endsAt": "2026-04-26T17:36:51.807Z",
     "fingerprint": "0163dc8ebf78af06",
     "receivers": [
       {
@@ -18,7 +18,7 @@
       "silencedBy": [],
       "state": "active"
     },
-    "updatedAt": "2026-04-26T16:53:07.306Z",
+    "updatedAt": "2026-04-26T17:33:05.506Z",
     "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aup%3Aratio_1h+%3C+0.95&g0.tab=1",
     "labels": {
       "alertname": "AwsNodeFastBurn",
@@ -32,7 +32,7 @@
       "description": "Error budget consumption is elevated.",
       "summary": "High burn rate detected"
     },
-    "endsAt": "2026-04-26T16:56:49.289Z",
+    "endsAt": "2026-04-26T17:36:49.289Z",
     "fingerprint": "10ecdb0ba7c63fd2",
     "receivers": [
       {
@@ -46,7 +46,7 @@
       "silencedBy": [],
       "state": "active"
     },
-    "updatedAt": "2026-04-26T16:53:04.814Z",
+    "updatedAt": "2026-04-26T17:33:03.013Z",
     "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aburn_rate_1h+%3E+6&g0.tab=1",
     "labels": {
       "alertname": "AwsNodeBurnRateHigh",
@@ -60,7 +60,7 @@
       "description": "24h availability below 99%.",
       "summary": "aws-node SLO breach detected"
     },
-    "endsAt": "2026-04-26T16:56:51.807Z",
+    "endsAt": "2026-04-26T17:36:51.807Z",
     "fingerprint": "2d9c7d6b941ad4ab",
     "receivers": [
       {
@@ -76,7 +76,7 @@
       "silencedBy": [],
       "state": "suppressed"
     },
-    "updatedAt": "2026-04-26T16:53:07.305Z",
+    "updatedAt": "2026-04-26T17:33:05.505Z",
     "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aup%3Aratio_24h+%3C+0.99&g0.tab=1",
     "labels": {
       "alertname": "AwsNodeSLOBreaching",
@@ -90,7 +90,7 @@
       "description": "Error budget is being consumed gradually.",
       "summary": "Slow burn rate detected"
     },
-    "endsAt": "2026-04-26T16:56:49.289Z",
+    "endsAt": "2026-04-26T17:36:49.289Z",
     "fingerprint": "d9c4e89546d5b300",
     "receivers": [
       {
@@ -106,7 +106,7 @@
       "silencedBy": [],
       "state": "suppressed"
     },
-    "updatedAt": "2026-04-26T16:53:04.815Z",
+    "updatedAt": "2026-04-26T17:33:03.014Z",
     "generatorURL": "http://4c864024cddc:9090/graph?g0.expr=job%3Aaws_node%3Aburn_rate_1h+%3E+3&g0.tab=1",
     "labels": {
       "alertname": "AwsNodeBurnRateSlow",

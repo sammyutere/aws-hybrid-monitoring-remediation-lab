@@ -59,8 +59,8 @@ meta-health-exporter   "python -u /app/app.…"   meta-health-exporter   running
 prometheus             "/bin/prometheus --c…"   prometheus             running             0.0.0.0:9090->9090/tcp
 test-receiver          "python -u day21_tes…"   test-receiver          running             0.0.0.0:5001->5001/tcp
 [13] Checking meta-health metrics
-{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_prometheus_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777220791.200,"1"]}]}}
-{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_alertmanager_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777220791.218,"1"]}]}}
-{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_grafana_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777220791.236,"1"]}]}}
-{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_test_receiver_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777220791.252,"1"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_prometheus_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777224664.590,"1"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_alertmanager_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777224664.606,"1"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_grafana_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777224664.621,"1"]}]}}
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"__name__":"meta_test_receiver_up","instance":"meta-health-exporter:9911","job":"meta-monitoring"},"value":[1777224664.635,"1"]}]}}
 === Day 28 restore validation complete ===
