@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "data": {
+    "resultType": "vector",
+    "result": [
+      {
+        "metric": {
+          "__name__": "meta_alertmanager_up",
+          "instance": "meta-health-exporter:9911",
+          "job": "meta-monitoring"
+        },
+        "value": [
+          1777219216.562,
+          "1"
+        ]
+      }
+    ]
+  }
+}

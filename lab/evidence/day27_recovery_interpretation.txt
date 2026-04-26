@@ -1,0 +1,14 @@
+Day 27 recovery interpretation:
+
+This lab validates backup integrity and restore readiness.
+
+Operational recovery means:
+- restored files exist
+- restored Compose config validates
+- running monitoring stack remains healthy
+
+Statistical recovery means:
+- alert windows have decayed
+- long-window SLO and burn-rate alerts have cleared
+
+If long-window alerts are still visible after recovery validation, this may reflect historical downtime and not current monitoring stack failure.

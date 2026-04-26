@@ -1,0 +1,6 @@
+Restore structure validation passed:
+- docker-compose.yml restored
+- prometheus.yml restored
+- alertmanager.yml restored
+- grafana dashboards restored
+- grafana provisioning restored
