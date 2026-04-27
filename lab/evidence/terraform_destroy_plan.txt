@@ -1,0 +1,384 @@
+[0m[1maws_iam_role.ec2_ssm_role: Refreshing state... [id=ec2-ssm-role][0m
+[0m[1maws_eip.node_eip: Refreshing state... [id=eipalloc-098efa269cc56fc4e][0m
+[0m[1maws_vpc.lab_vpc: Refreshing state... [id=vpc-072b2c1984f7b2400][0m
+[0m[1maws_iam_instance_profile.ec2_profile: Refreshing state... [id=ec2-ssm-profile][0m
+[0m[1maws_iam_role_policy_attachment.ssm_attach: Refreshing state... [id=ec2-ssm-role-20260303174608225000000001][0m
+[0m[1maws_subnet.public_subnet: Refreshing state... [id=subnet-0f5efaa567d27825a][0m
+[0m[1maws_security_group.node_sg: Refreshing state... [id=sg-013e820b52efe21b1][0m
+[0m[1maws_internet_gateway.igw: Refreshing state... [id=igw-03ff0c61b4d91fcfa][0m
+[0m[1maws_instance.node: Refreshing state... [id=i-036af2e244fc9b8dc][0m
+[0m[1maws_route_table.public_rt: Refreshing state... [id=rtb-0a44c50c4d1f6ff30][0m
+[0m[1maws_route_table_association.public_assoc: Refreshing state... [id=rtbassoc-09fdb89756fa3dfca][0m
+[0m[1maws_eip_association.node_eip_assoc: Refreshing state... [id=eipassoc-0c131be390a5ccf0e][0m
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # aws_eip.node_eip[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_eip" "node_eip" {
+      [31m-[0m[0m allocation_id        = "eipalloc-098efa269cc56fc4e" [90m-> null[0m[0m
+      [31m-[0m[0m arn                  = "arn:aws:ec2:us-east-1:393864004024:elastic-ip/eipalloc-098efa269cc56fc4e" [90m-> null[0m[0m
+      [31m-[0m[0m association_id       = "eipassoc-0c131be390a5ccf0e" [90m-> null[0m[0m
+      [31m-[0m[0m domain               = "vpc" [90m-> null[0m[0m
+      [31m-[0m[0m id                   = "eipalloc-098efa269cc56fc4e" [90m-> null[0m[0m
+      [31m-[0m[0m instance             = "i-036af2e244fc9b8dc" [90m-> null[0m[0m
+      [31m-[0m[0m network_border_group = "us-east-1" [90m-> null[0m[0m
+      [31m-[0m[0m network_interface    = "eni-0c8b2ce66c8d406f9" [90m-> null[0m[0m
+      [31m-[0m[0m private_dns          = "ip-10-0-1-43.ec2.internal" [90m-> null[0m[0m
+      [31m-[0m[0m private_ip           = "10.0.1.43" [90m-> null[0m[0m
+      [31m-[0m[0m public_dns           = "ec2-184-73-6-214.compute-1.amazonaws.com" [90m-> null[0m[0m
+      [31m-[0m[0m public_ip            = "184.73.6.214" [90m-> null[0m[0m
+      [31m-[0m[0m public_ipv4_pool     = "amazon" [90m-> null[0m[0m
+      [31m-[0m[0m tags                 = {
+          [31m-[0m[0m "Name" = "monitoring-node-eip"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all             = {
+          [31m-[0m[0m "Name" = "monitoring-node-eip"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc                  = true [90m-> null[0m[0m
+    }
+
+[1m  # aws_eip_association.node_eip_assoc[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_eip_association" "node_eip_assoc" {
+      [31m-[0m[0m allocation_id        = "eipalloc-098efa269cc56fc4e" [90m-> null[0m[0m
+      [31m-[0m[0m id                   = "eipassoc-0c131be390a5ccf0e" [90m-> null[0m[0m
+      [31m-[0m[0m instance_id          = "i-036af2e244fc9b8dc" [90m-> null[0m[0m
+      [31m-[0m[0m network_interface_id = "eni-0c8b2ce66c8d406f9" [90m-> null[0m[0m
+      [31m-[0m[0m private_ip_address   = "10.0.1.43" [90m-> null[0m[0m
+      [31m-[0m[0m public_ip            = "184.73.6.214" [90m-> null[0m[0m
+    }
+
+[1m  # aws_iam_instance_profile.ec2_profile[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_iam_instance_profile" "ec2_profile" {
+      [31m-[0m[0m arn         = "arn:aws:iam::393864004024:instance-profile/ec2-ssm-profile" [90m-> null[0m[0m
+      [31m-[0m[0m create_date = "2026-03-03T17:46:08Z" [90m-> null[0m[0m
+      [31m-[0m[0m id          = "ec2-ssm-profile" [90m-> null[0m[0m
+      [31m-[0m[0m name        = "ec2-ssm-profile" [90m-> null[0m[0m
+      [31m-[0m[0m path        = "/" [90m-> null[0m[0m
+      [31m-[0m[0m role        = "ec2-ssm-role" [90m-> null[0m[0m
+      [31m-[0m[0m tags        = {} [90m-> null[0m[0m
+      [31m-[0m[0m tags_all    = {} [90m-> null[0m[0m
+      [31m-[0m[0m unique_id   = "AIPAVXNA7YG4INAFGJUQI" [90m-> null[0m[0m
+    }
+
+[1m  # aws_iam_role.ec2_ssm_role[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_iam_role" "ec2_ssm_role" {
+      [31m-[0m[0m arn                   = "arn:aws:iam::393864004024:role/ec2-ssm-role" [90m-> null[0m[0m
+      [31m-[0m[0m assume_role_policy    = jsonencode(
+            {
+              [31m-[0m[0m Statement = [
+                  [31m-[0m[0m {
+                      [31m-[0m[0m Action    = "sts:AssumeRole"
+                      [31m-[0m[0m Effect    = "Allow"
+                      [31m-[0m[0m Principal = {
+                          [31m-[0m[0m Service = "ec2.amazonaws.com"
+                        }
+                    },
+                ]
+              [31m-[0m[0m Version   = "2012-10-17"
+            }
+        ) [90m-> null[0m[0m
+      [31m-[0m[0m create_date           = "2026-03-03T17:46:06Z" [90m-> null[0m[0m
+      [31m-[0m[0m force_detach_policies = false [90m-> null[0m[0m
+      [31m-[0m[0m id                    = "ec2-ssm-role" [90m-> null[0m[0m
+      [31m-[0m[0m managed_policy_arns   = [
+          [31m-[0m[0m "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m
+      [31m-[0m[0m name                  = "ec2-ssm-role" [90m-> null[0m[0m
+      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m
+      [31m-[0m[0m tags                  = {} [90m-> null[0m[0m
+      [31m-[0m[0m tags_all              = {} [90m-> null[0m[0m
+      [31m-[0m[0m unique_id             = "AROAVXNA7YG4IZKS2GKVG" [90m-> null[0m[0m
+    }
+
+[1m  # aws_iam_role_policy_attachment.ssm_attach[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_iam_role_policy_attachment" "ssm_attach" {
+      [31m-[0m[0m id         = "ec2-ssm-role-20260303174608225000000001" [90m-> null[0m[0m
+      [31m-[0m[0m policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore" [90m-> null[0m[0m
+      [31m-[0m[0m role       = "ec2-ssm-role" [90m-> null[0m[0m
+    }
+
+[1m  # aws_instance.node[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_instance" "node" {
+      [31m-[0m[0m ami                                  = "ami-0199fa5fada510433" [90m-> null[0m[0m
+      [31m-[0m[0m arn                                  = "arn:aws:ec2:us-east-1:393864004024:instance/i-036af2e244fc9b8dc" [90m-> null[0m[0m
+      [31m-[0m[0m associate_public_ip_address          = true [90m-> null[0m[0m
+      [31m-[0m[0m availability_zone                    = "us-east-1c" [90m-> null[0m[0m
+      [31m-[0m[0m cpu_core_count                       = 1 [90m-> null[0m[0m
+      [31m-[0m[0m cpu_threads_per_core                 = 2 [90m-> null[0m[0m
+      [31m-[0m[0m disable_api_stop                     = false [90m-> null[0m[0m
+      [31m-[0m[0m disable_api_termination              = false [90m-> null[0m[0m
+      [31m-[0m[0m ebs_optimized                        = false [90m-> null[0m[0m
+      [31m-[0m[0m get_password_data                    = false [90m-> null[0m[0m
+      [31m-[0m[0m hibernation                          = false [90m-> null[0m[0m
+      [31m-[0m[0m iam_instance_profile                 = "ec2-ssm-profile" [90m-> null[0m[0m
+      [31m-[0m[0m id                                   = "i-036af2e244fc9b8dc" [90m-> null[0m[0m
+      [31m-[0m[0m instance_initiated_shutdown_behavior = "stop" [90m-> null[0m[0m
+      [31m-[0m[0m instance_state                       = "running" [90m-> null[0m[0m
+      [31m-[0m[0m instance_type                        = "t3.micro" [90m-> null[0m[0m
+      [31m-[0m[0m ipv6_address_count                   = 0 [90m-> null[0m[0m
+      [31m-[0m[0m ipv6_addresses                       = [] [90m-> null[0m[0m
+      [31m-[0m[0m monitoring                           = true [90m-> null[0m[0m
+      [31m-[0m[0m placement_partition_number           = 0 [90m-> null[0m[0m
+      [31m-[0m[0m primary_network_interface_id         = "eni-0c8b2ce66c8d406f9" [90m-> null[0m[0m
+      [31m-[0m[0m private_dns                          = "ip-10-0-1-43.ec2.internal" [90m-> null[0m[0m
+      [31m-[0m[0m private_ip                           = "10.0.1.43" [90m-> null[0m[0m
+      [31m-[0m[0m public_ip                            = "184.73.6.214" [90m-> null[0m[0m
+      [31m-[0m[0m secondary_private_ips                = [] [90m-> null[0m[0m
+      [31m-[0m[0m security_groups                      = [] [90m-> null[0m[0m
+      [31m-[0m[0m source_dest_check                    = true [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id                            = "subnet-0f5efaa567d27825a" [90m-> null[0m[0m
+      [31m-[0m[0m tags                                 = {
+          [31m-[0m[0m "Name" = "monitoring-node"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                             = {
+          [31m-[0m[0m "Name" = "monitoring-node"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tenancy                              = "default" [90m-> null[0m[0m
+      [31m-[0m[0m user_data                            = "700fe30949b01fd4840c2e6bc505717d13f35a81" [90m-> null[0m[0m
+      [31m-[0m[0m user_data_replace_on_change          = false [90m-> null[0m[0m
+      [31m-[0m[0m vpc_security_group_ids               = [
+          [31m-[0m[0m "sg-013e820b52efe21b1",
+        ] [90m-> null[0m[0m
+
+      [31m-[0m[0m capacity_reservation_specification {
+          [31m-[0m[0m capacity_reservation_preference = "open" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m cpu_options {
+          [31m-[0m[0m core_count       = 1 [90m-> null[0m[0m
+          [31m-[0m[0m threads_per_core = 2 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m credit_specification {
+          [31m-[0m[0m cpu_credits = "unlimited" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m enclave_options {
+          [31m-[0m[0m enabled = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m maintenance_options {
+          [31m-[0m[0m auto_recovery = "default" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m metadata_options {
+          [31m-[0m[0m http_endpoint               = "enabled" [90m-> null[0m[0m
+          [31m-[0m[0m http_protocol_ipv6          = "disabled" [90m-> null[0m[0m
+          [31m-[0m[0m http_put_response_hop_limit = 1 [90m-> null[0m[0m
+          [31m-[0m[0m http_tokens                 = "optional" [90m-> null[0m[0m
+          [31m-[0m[0m instance_metadata_tags      = "disabled" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m private_dns_name_options {
+          [31m-[0m[0m enable_resource_name_dns_a_record    = false [90m-> null[0m[0m
+          [31m-[0m[0m enable_resource_name_dns_aaaa_record = false [90m-> null[0m[0m
+          [31m-[0m[0m hostname_type                        = "ip-name" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m root_block_device {
+          [31m-[0m[0m delete_on_termination = true [90m-> null[0m[0m
+          [31m-[0m[0m device_name           = "/dev/xvda" [90m-> null[0m[0m
+          [31m-[0m[0m encrypted             = false [90m-> null[0m[0m
+          [31m-[0m[0m iops                  = 100 [90m-> null[0m[0m
+          [31m-[0m[0m tags                  = {} [90m-> null[0m[0m
+          [31m-[0m[0m tags_all              = {} [90m-> null[0m[0m
+          [31m-[0m[0m throughput            = 0 [90m-> null[0m[0m
+          [31m-[0m[0m volume_id             = "vol-02ac31ae62c398f91" [90m-> null[0m[0m
+          [31m-[0m[0m volume_size           = 8 [90m-> null[0m[0m
+          [31m-[0m[0m volume_type           = "gp2" [90m-> null[0m[0m
+        }
+    }
+
+[1m  # aws_internet_gateway.igw[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_internet_gateway" "igw" {
+      [31m-[0m[0m arn      = "arn:aws:ec2:us-east-1:393864004024:internet-gateway/igw-03ff0c61b4d91fcfa" [90m-> null[0m[0m
+      [31m-[0m[0m id       = "igw-03ff0c61b4d91fcfa" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id = "393864004024" [90m-> null[0m[0m
+      [31m-[0m[0m tags     = {} [90m-> null[0m[0m
+      [31m-[0m[0m tags_all = {} [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id   = "vpc-072b2c1984f7b2400" [90m-> null[0m[0m
+    }
+
+[1m  # aws_route_table.public_rt[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_route_table" "public_rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-east-1:393864004024:route-table/rtb-0a44c50c4d1f6ff30" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-0a44c50c4d1f6ff30" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "393864004024" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m carrier_gateway_id         = ""
+              [31m-[0m[0m cidr_block                 = "0.0.0.0/0"
+              [31m-[0m[0m core_network_arn           = ""
+              [31m-[0m[0m destination_prefix_list_id = ""
+              [31m-[0m[0m egress_only_gateway_id     = ""
+              [31m-[0m[0m gateway_id                 = "igw-03ff0c61b4d91fcfa"
+              [31m-[0m[0m ipv6_cidr_block            = ""
+              [31m-[0m[0m local_gateway_id           = ""
+              [31m-[0m[0m nat_gateway_id             = ""
+              [31m-[0m[0m network_interface_id       = ""
+              [31m-[0m[0m transit_gateway_id         = ""
+              [31m-[0m[0m vpc_endpoint_id            = ""
+              [31m-[0m[0m vpc_peering_connection_id  = ""
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {} [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {} [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-072b2c1984f7b2400" [90m-> null[0m[0m
+    }
+
+[1m  # aws_route_table_association.public_assoc[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_route_table_association" "public_assoc" {
+      [31m-[0m[0m id             = "rtbassoc-09fdb89756fa3dfca" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-0a44c50c4d1f6ff30" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-0f5efaa567d27825a" [90m-> null[0m[0m
+    }
+
+[1m  # aws_security_group.node_sg[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_security_group" "node_sg" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:us-east-1:393864004024:security-group/sg-013e820b52efe21b1" [90m-> null[0m[0m
+      [31m-[0m[0m description            = "Managed by Terraform" [90m-> null[0m[0m
+      [31m-[0m[0m egress                 = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m description      = "Allow all outbound"
+              [31m-[0m[0m from_port        = 0
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "-1"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 0
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sg-013e820b52efe21b1" [90m-> null[0m[0m
+      [31m-[0m[0m ingress                = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "2.217.62.146/32",
+                  [31m-[0m[0m "184.73.6.214/32",
+                  [31m-[0m[0m "31.94.8.191/32",
+                  [31m-[0m[0m "148.252.146.75/32",
+                  [31m-[0m[0m "31.94.71.126/32",
+                  [31m-[0m[0m "90.195.40.98/32",
+                  [31m-[0m[0m "148.252.128.114/32",
+                  [31m-[0m[0m "148.252.148.63/32",
+                  [31m-[0m[0m "148.252.128.111/32",
+                ]
+              [31m-[0m[0m description      = ""
+              [31m-[0m[0m from_port        = 22
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 22
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "2.217.62.146/32",
+                ]
+              [31m-[0m[0m description      = "Allow node_exporter from my IPv4"
+              [31m-[0m[0m from_port        = 9100
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 9100
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "90.195.40.98/32",
+                  [31m-[0m[0m "148.252.148.63/32",
+                  [31m-[0m[0m "31.94.71.126/32",
+                  [31m-[0m[0m "148.252.128.111/32",
+                ]
+              [31m-[0m[0m description      = ""
+              [31m-[0m[0m from_port        = 9100
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 9100
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m name                   = "node-exporter-sg" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id               = "393864004024" [90m-> null[0m[0m
+      [31m-[0m[0m revoke_rules_on_delete = false [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name" = "node-exporter-sg"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name" = "node-exporter-sg"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id                 = "vpc-072b2c1984f7b2400" [90m-> null[0m[0m
+    }
+
+[1m  # aws_subnet.public_subnet[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_subnet" "public_subnet" {
+      [31m-[0m[0m arn                                            = "arn:aws:ec2:us-east-1:393864004024:subnet/subnet-0f5efaa567d27825a" [90m-> null[0m[0m
+      [31m-[0m[0m assign_ipv6_address_on_creation                = false [90m-> null[0m[0m
+      [31m-[0m[0m availability_zone                              = "us-east-1c" [90m-> null[0m[0m
+      [31m-[0m[0m availability_zone_id                           = "use1-az4" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_block                                     = "10.0.1.0/24" [90m-> null[0m[0m
+      [31m-[0m[0m enable_dns64                                   = false [90m-> null[0m[0m
+      [31m-[0m[0m enable_lni_at_device_index                     = 0 [90m-> null[0m[0m
+      [31m-[0m[0m enable_resource_name_dns_a_record_on_launch    = false [90m-> null[0m[0m
+      [31m-[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false [90m-> null[0m[0m
+      [31m-[0m[0m id                                             = "subnet-0f5efaa567d27825a" [90m-> null[0m[0m
+      [31m-[0m[0m ipv6_native                                    = false [90m-> null[0m[0m
+      [31m-[0m[0m map_customer_owned_ip_on_launch                = false [90m-> null[0m[0m
+      [31m-[0m[0m map_public_ip_on_launch                        = true [90m-> null[0m[0m
+      [31m-[0m[0m owner_id                                       = "393864004024" [90m-> null[0m[0m
+      [31m-[0m[0m private_dns_hostname_type_on_launch            = "ip-name" [90m-> null[0m[0m
+      [31m-[0m[0m tags                                           = {
+          [31m-[0m[0m "Name" = "lab-public-subnet"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                                       = {
+          [31m-[0m[0m "Name" = "lab-public-subnet"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id                                         = "vpc-072b2c1984f7b2400" [90m-> null[0m[0m
+    }
+
+[1m  # aws_vpc.lab_vpc[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc" "lab_vpc" {
+      [31m-[0m[0m arn                                  = "arn:aws:ec2:us-east-1:393864004024:vpc/vpc-072b2c1984f7b2400" [90m-> null[0m[0m
+      [31m-[0m[0m assign_generated_ipv6_cidr_block     = false [90m-> null[0m[0m
+      [31m-[0m[0m cidr_block                           = "10.0.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m default_network_acl_id               = "acl-04b6df1c8ce633c4a" [90m-> null[0m[0m
+      [31m-[0m[0m default_route_table_id               = "rtb-0be5d606acb0ff511" [90m-> null[0m[0m
+      [31m-[0m[0m default_security_group_id            = "sg-068dc94544f497228" [90m-> null[0m[0m
+      [31m-[0m[0m dhcp_options_id                      = "dopt-0244d1193d814bcc9" [90m-> null[0m[0m
+      [31m-[0m[0m enable_dns_hostnames                 = false [90m-> null[0m[0m
+      [31m-[0m[0m enable_dns_support                   = true [90m-> null[0m[0m
+      [31m-[0m[0m enable_network_address_usage_metrics = false [90m-> null[0m[0m
+      [31m-[0m[0m id                                   = "vpc-072b2c1984f7b2400" [90m-> null[0m[0m
+      [31m-[0m[0m instance_tenancy                     = "default" [90m-> null[0m[0m
+      [31m-[0m[0m ipv6_netmask_length                  = 0 [90m-> null[0m[0m
+      [31m-[0m[0m main_route_table_id                  = "rtb-0be5d606acb0ff511" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id                             = "393864004024" [90m-> null[0m[0m
+      [31m-[0m[0m tags                                 = {
+          [31m-[0m[0m "Name" = "lab-vpc"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                             = {
+          [31m-[0m[0m "Name" = "lab-vpc"
+        } [90m-> null[0m[0m
+    }
+
+[1mPlan:[0m 0 to add, 0 to change, 12 to destroy.
+[0m
+Changes to Outputs:
+  [31m-[0m[0m elastic_ip  = "184.73.6.214" [90m-> null[0m[0m
+  [31m-[0m[0m instance_id = "i-036af2e244fc9b8dc" [90m-> null[0m[0m
+
+
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.

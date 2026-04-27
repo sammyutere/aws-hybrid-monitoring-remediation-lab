@@ -1,0 +1,24 @@
+
+./tf.sh output \
+  > ../../lab/evidence/terraform_outputs_before_destroy.txt
+
+./tf.sh plan -destroy -var-file=terraform.tfvars \
+  > ../../lab/evidence/terraform_destroy_plan.txt
+
+./tf.sh destroy -var-file=terraform.tfvars \
+  > ../../lab/evidence/terraform_destroy_output.txt
+
+./tf.sh state list \
+  > ../../lab/evidence/aws_resources_after_destroy.txt
+aws_eip.node_eip
+aws_eip_association.node_eip_assoc
+aws_iam_instance_profile.ec2_profile
+aws_iam_role.ec2_ssm_role
+aws_iam_role_policy_attachment.ssm_attach
+aws_instance.node
+aws_internet_gateway.igw
+aws_route_table.public_rt
+aws_route_table_association.public_assoc
+aws_security_group.node_sg
+aws_subnet.public_subnet
+aws_vpc.lab_vpc

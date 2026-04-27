@@ -1,0 +1,2 @@
+elastic_ip = "184.73.6.214"
+instance_id = "i-036af2e244fc9b8dc"
