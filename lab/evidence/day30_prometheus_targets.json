@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "data": {
+    "activeTargets": [
+      {
+        "discoveredLabels": {
+          "__address__": "184.73.6.214:9100",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "15s",
+          "__scrape_timeout__": "10s",
+          "job": "aws-node"
+        },
+        "labels": {
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node"
+        },
+        "scrapePool": "aws-node",
+        "scrapeUrl": "http://184.73.6.214:9100/metrics",
+        "globalUrl": "http://184.73.6.214:9100/metrics",
+        "lastError": "",
+        "lastScrape": "2026-04-27T20:36:15.730465921Z",
+        "lastScrapeDuration": 0.112705241,
+        "health": "up",
+        "scrapeInterval": "15s",
+        "scrapeTimeout": "10s"
+      },
+      {
+        "discoveredLabels": {
+          "__address__": "meta-health-exporter:9911",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "15s",
+          "__scrape_timeout__": "10s",
+          "job": "meta-monitoring"
+        },
+        "labels": {
+          "instance": "meta-health-exporter:9911",
+          "job": "meta-monitoring"
+        },
+        "scrapePool": "meta-monitoring",
+        "scrapeUrl": "http://meta-health-exporter:9911/metrics",
+        "globalUrl": "http://meta-health-exporter:9911/metrics",
+        "lastError": "",
+        "lastScrape": "2026-04-27T20:36:13.692794642Z",
+        "lastScrapeDuration": 0.05732428,
+        "health": "up",
+        "scrapeInterval": "15s",
+        "scrapeTimeout": "10s"
+      }
+    ],
+    "droppedTargets": [],
+    "droppedTargetCounts": {
+      "aws-node": 0,
+      "meta-monitoring": 0
+    }
+  }
+}

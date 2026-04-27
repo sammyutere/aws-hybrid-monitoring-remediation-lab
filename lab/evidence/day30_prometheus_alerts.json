@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "data": {
+    "alerts": [
+      {
+        "labels": {
+          "alertname": "AwsNodeSLOBreaching",
+          "instance": "184.73.6.214:9100",
+          "job": "aws-node",
+          "severity": "ticket"
+        },
+        "annotations": {
+          "description": "24h availability below 99%.",
+          "summary": "aws-node SLO breach detected"
+        },
+        "state": "firing",
+        "activeAt": "2026-04-25T09:13:51.807411735Z",
+        "value": "7.980501392757661e-01"
+      }
+    ]
+  }
+}

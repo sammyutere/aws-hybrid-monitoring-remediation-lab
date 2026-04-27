@@ -1,0 +1,1 @@
+-rw-r--r--  1 macos  staff   4.1K 25 Apr 11:20 backups/day26-monitoring-stack.tar.gz
