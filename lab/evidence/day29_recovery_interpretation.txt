@@ -1,0 +1,16 @@
+Day 29 recovery interpretation:
+
+This lab validates evidence packaging and audit readiness.
+
+Operational success means:
+- evidence bundle is created
+- checksum verifies
+- archive contents can be listed
+- archive can be extracted
+- included Compose config validates
+- monitoring stack remains healthy
+
+Statistical recovery means:
+- long-window SLO and burn-rate alerts have decayed and cleared
+
+If long-window alerts are still visible, they may reflect historical downtime and not a failure of the Day 29 packaging process.

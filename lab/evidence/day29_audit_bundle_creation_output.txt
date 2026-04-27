@@ -1,0 +1,15 @@
+=== Day 29 Evidence Packaging ===
+[1] Creating temporary bundle directory
+[2] Copying evidence
+[3] Copying documentation
+[4] Copying monitoring configs
+[5] Copying Grafana assets if present
+[6] Copying scripts
+[7] Creating manifest
+[8] Capturing Git metadata
+[9] Creating archive
+[10] Creating checksum
+[11] Writing latest pointer
+=== Bundle created ===
+Bundle: audit-bundles/day29-audit-bundle-20260427T095821Z.tar.gz
+Checksum: audit-bundles/day29-audit-bundle-20260427T095821Z.sha256
